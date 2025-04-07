@@ -5,7 +5,7 @@ import Script from "next/script";
 import { useEffect, useRef } from "react";
 import FormCard from "~/components/ui/form-card";
 
-const yandexMapApiKey = process.env.YANDEX_MAP_API_KEY;
+const yandexMapApiKey = process.env.NEXT_PUBLIC_YANDEX_MAPS_API_KEY;
 // Определение типов для Яндекс.Карт
 declare global {
   interface Window {
