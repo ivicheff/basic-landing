@@ -5,6 +5,8 @@ interface Platform {
   rating: number;
   link: string;
   image: string;
+  title: string;
+  linkText: string;
 }
 
 const PlatformCardStack = () => {
@@ -18,6 +20,8 @@ const PlatformCardStack = () => {
           rating={platform.rating}
           link={platform.link}
           image={platform.image}
+          title={platform.title}
+          linkText={platform.linkText}
         />
       ))}
     </div>

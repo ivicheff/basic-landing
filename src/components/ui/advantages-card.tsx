@@ -55,7 +55,7 @@ export default function AdvantagesCard({
           <div style={{ color: colorValue }}>{icon}</div>
         </div>
       </CardContent>
-      <CardHeader className="gap-1">
+      <CardHeader className=" gap-1">
         <CardTitle>
           <h3>{title}</h3>
         </CardTitle>

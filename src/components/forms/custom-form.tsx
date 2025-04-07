@@ -20,7 +20,7 @@ import contentData from "~/content.ru.json";
 import { handleForm } from "~/lib/actions";
 import type { ContentData } from "~/types/content";
 
-const content = contentData as ContentData;
+const content = contentData as unknown as ContentData;
 const formContent = content.contacts.form;
 
 const CustomForm = () => {

@@ -22,26 +22,48 @@
     "testimonialText": "Более 40,000+ владельцев бизнеса уже изменили подход к привлечению клиентов вместе с нами...",
     "image": { "src": "/default.png", "alt": "Главная" },
     "avatars": {
-      "length": 6,
-      "images": ["https://github.com/shadcn.png"],
-      "fallbacks": ["АВ"],
-      "alts": ["Аватар"]
+      "length": 7,
+      "images": [
+        "/images/clients/person1.jpg",
+        "/images/clients/person2.jpg",
+        "/images/clients/person3.jpg",
+        "/images/clients/person4.jpg",
+        "/images/clients/person5.jpg",
+        "/images/clients/person6.jpg",
+        "/images/clients/person7.jpg"
+      ],
+      "fallbacks": ["АИ", "МС", "ЕП", "ДК", "ОЛ", "ВН", "РМ"],
+      "alts": [
+        "Анна Иванова",
+        "Михаил Смирнов",
+        "Елена Петрова",
+        "Дмитрий Козлов",
+        "Ольга Лебедева",
+        "Виктор Николаев",
+        "Роман Морозов"
+      ]
     },
     "platforms": [
       {
         "rating": 4.9,
         "link": "https://example.com/reviews",
-        "image": "/default.png"
+        "image": "/images/brands/facebook.png",
+        "title": "Facebook",
+        "linkText": "Смотреть все отзывы"
       },
       {
         "rating": 4.8,
         "link": "https://example.com/reviews",
-        "image": "/default.png"
+        "image": "/images/brands/google.png",
+        "title": "Google",
+        "linkText": "Смотреть все отзывы"
       },
       {
         "rating": 4.7,
         "link": "https://example.com/reviews",
-        "image": "/default.png"
+        "image": "/images/brands/yandex.png",
+        "title": "Yandex",
+        "linkText": "Смотреть все отзывы"
       }
     ]
   },
@@ -125,31 +147,31 @@
       {
         "name": "Иван Петров",
         "jobTitle": "CEO",
-        "image": "/default.png",
+        "image": "/images/clients/person1.jpg",
         "testimonial": "Этот продукт полностью изменил наш рабочий процесс. Он интуитивно понятен, мощный и приятный в использовании."
       },
       {
         "name": "Анна Иванова",
         "jobTitle": "CTO",
-        "image": "/default.png",
+        "image": "/images/clients/person2.jpg",
         "testimonial": "Улучшения производительности, которые мы увидели после внедрения этого решения, впечатляют."
       },
       {
-        "name": "Алексей Смирнов",
+        "name": "Мария Козлова",
         "jobTitle": "Продакт-менеджер",
-        "image": "/default.png",
+        "image": "/images/clients/person3.jpg",
         "testimonial": "Наша команда стала намного эффективнее после внедрения этой платформы. Очень рекомендую!"
       },
       {
-        "name": "Мария Козлова",
+        "name": "Дмитрий Николаев",
         "jobTitle": "Ведущий разработчик",
-        "image": "/default.png",
+        "image": "/images/clients/person4.jpg",
         "testimonial": "Возможности интеграции превосходны. Система отлично работает со всеми нашими существующими инструментами."
       },
       {
-        "name": "Дмитрий Николаев",
+        "name": "Ольга Лебедева",
         "jobTitle": "Директор по маркетингу",
-        "image": "/default.png",
+        "image": "/images/clients/person5.jpg",
         "testimonial": "Аналитические функции дали нам инсайты, которых у нас никогда не было раньше. Это изменило нашу стратегию."
       }
     ]
@@ -271,7 +293,7 @@
         },
         {
           "type": "email",
-          "label": "Email",
+          "label": "Почта",
           "value": "info@example.com",
           "url": "mailto:info@example.com"
         },
@@ -313,7 +335,7 @@
         "url": "https://maps.google.com/?q=Пресненская+набережная+12+Москва"
       }
     ],
-    
+
     "newsletter": {
       "title": "Подписаться",
       "description": "Подпишитесь на нашу рассылку, чтобы получать обновления и инсайты."

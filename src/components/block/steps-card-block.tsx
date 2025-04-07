@@ -3,7 +3,7 @@ import Step from "~/components/patterns/step";
 import contentData from "~/content.ru.json";
 import type { ContentData } from "~/types/content";
 
-const content = contentData as ContentData;
+const content = contentData as unknown as ContentData;
 
 const StepsCardBlock = (): ReactElement => {
   return (
@@ -12,7 +12,7 @@ const StepsCardBlock = (): ReactElement => {
         <Step
           key={step.number}
           image={step.image}
-        title={step.title}
+          title={step.title}
           description={
             <span className="flex flex-col gap-2">
               {step.description.map((paragraph, pIndex) => (

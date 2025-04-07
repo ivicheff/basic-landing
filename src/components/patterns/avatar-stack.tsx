@@ -1,3 +1,4 @@
+import contentData from "../../../src/content.ru.json";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 interface AvatarStackProps {
@@ -8,15 +9,15 @@ interface AvatarStackProps {
 }
 
 const AvatarStack = ({
-  length = 6,
-  images = Array(length).fill("https://github.com/shadcn.png") as string[],
-  fallbacks = Array(length).fill("CN") as string[],
-  alts = Array(length).fill("Avatar") as string[],
+  length = contentData.hero.avatars.length,
+  images = contentData.hero.avatars.images,
+  fallbacks = contentData.hero.avatars.fallbacks,
+  alts = contentData.hero.avatars.alts,
 }: AvatarStackProps) => {
   return (
     <div className={`flex flex-row -space-x-1`}>
       {Array.from({ length }).map((_, index) => (
-        <Avatar key={index} className="border-2 border-secondary">
+        <Avatar key={index} className="border-secondary border-2">
           <AvatarImage
             src={images[index] ?? images[0]}
             alt={alts[index] ?? alts[0]}

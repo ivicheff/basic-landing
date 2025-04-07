@@ -52,7 +52,7 @@ const PlatformReviewsCard = ({
           </div>
         </CardContent>
         <CardFooter>
-          <CustomLink href={link} className="leading-none">
+          <CustomLink href={link} className="leading-none text-muted-foreground">
             <small>{linkText}</small>
           </CustomLink>
         </CardFooter>

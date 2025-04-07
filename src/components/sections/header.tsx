@@ -14,7 +14,7 @@ import contentData from "~/content.ru.json";
 import type { ContentData } from "~/types/content";
 import CustomLink from "../ui/custom-link";
 
-const content = contentData as ContentData;
+const content = contentData as unknown as ContentData;
 
 const Header = () => {
   return (

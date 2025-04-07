@@ -95,7 +95,9 @@ const ContactsSection = () => {
                 <div className="flex items-start gap-4">
                   <Phone className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
-                    <p className="font-medium">Phone</p>
+                    <p className="font-medium">
+                      {contentData.contacts.contactInfo?.items?.[0]?.label}
+                    </p>
                     <Link
                       href="tel:+15551234567"
                       className="text-muted-foreground"
@@ -107,7 +109,9 @@ const ContactsSection = () => {
                 <div className="flex items-start gap-4">
                   <Mail className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
-                    <p className="font-medium">Email</p>
+                    <p className="font-medium">
+                      {contentData.contacts.contactInfo?.items?.[1]?.label}
+                    </p>
                     <Link
                       href="mailto:info@example.com"
                       className="text-muted-foreground"
@@ -119,7 +123,9 @@ const ContactsSection = () => {
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
-                    <p className="font-medium">Address</p>
+                    <p className="font-medium">
+                      {contentData.contacts.contactInfo?.items?.[2]?.label}
+                    </p>
                     <Link
                       href="https://maps.google.com/?q=123+Business+Avenue,+Suite+100,+New+York,+NY+10001"
                       target="_blank"

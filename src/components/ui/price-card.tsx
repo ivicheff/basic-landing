@@ -31,7 +31,7 @@ const PriceCard = ({
       <CardContent>
         <Image
           src={image}
-          className="h-[160px] w-full object-cover rounded-md"
+          className="h-[160px] w-full rounded-md object-cover"
           alt="Price"
           width={100}
           height={160}
@@ -45,7 +45,7 @@ const PriceCard = ({
           <p>{description}</p>
         </CardDescription>
       </CardHeader>
-      <CardFooter className="justify-between">
+      <CardFooter className="mt-auto justify-between">
         <p>
           <small>{price}</small>
         </p>
