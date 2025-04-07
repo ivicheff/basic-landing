@@ -1,13 +1,13 @@
-import StepsCardBlock from "../block/steps-card-block";
+import StepsCardBlock from "~/components/block/steps-card-block";
+import contentData from "../../../src/content.ru.json";
 
 const StepsSection = () => {
   return (
     <section className="flex flex-col" id="steps">
       <div className="flex flex-col items-center justify-center gap-2 pb-8">
-        <h2>Steps to success</h2>
+        <h2>{contentData.steps.title}</h2>
         <p className="text-muted-foreground text-center">
-          We deliver exceptional results through our comprehensive suite of
-          business solutions.
+          {contentData.steps.description}
         </p>
       </div>
       <StepsCardBlock />

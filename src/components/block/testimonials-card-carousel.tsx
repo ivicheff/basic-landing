@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Carousel,
   CarouselContent,
@@ -6,46 +8,18 @@ import {
   CarouselPrevious,
 } from "~/components/ui/carousel";
 import TestimonialCard from "~/components/ui/testimonial-card";
+import contentData from "../../../src/content.ru.json";
 
-const testimonials = [
-  {
-    name: "John Doe",
-    jobTitle: "CEO",
-    image: "/default.png",
-    testimonial:
-      "This product has completely transformed our workflow. It's intuitive, powerful, and a joy to use every day",
-  },
-  {
-    name: "Jane Smith",
-    jobTitle: "CTO",
-    image: "/default.png",
-    testimonial:
-      "The performance improvements we've seen since implementing this solution have been remarkable.",
-  },
-  {
-    name: "Alex Johnson",
-    jobTitle: "Product Manager",
-    image: "/default.png",
-    testimonial:
-      "Our team has become much more efficient after adopting this platform. Highly recommended!",
-  },
-  {
-    name: "Sarah Williams",
-    jobTitle: "Lead Developer",
-    image: "/default.png",
-    testimonial:
-      "The integration capabilities are exceptional. It connects seamlessly with all our existing tools.",
-  },
-  {
-    name: "Michael Brown",
-    jobTitle: "Marketing Director",
-    image: "/default.png",
-    testimonial:
-      "The analytics features have given us insights we never had before. Game-changing for our strategy.",
-  },
-];
+interface Testimonial {
+  name: string;
+  jobTitle: string;
+  image: string;
+  testimonial: string;
+}
 
 const TestimonialsCardCarousel = () => {
+  const testimonials: Testimonial[] = contentData.testimonials.items;
+
   return (
     <div className="w-full">
       <Carousel

@@ -12,13 +12,15 @@ interface StatisticCardProps {
 
 const StatisticCard = ({ title, description }: StatisticCardProps) => {
   return (
-    <Card className=" rounded-lg px-5 py-3">
+    <Card className="rounded-lg px-5 py-3">
       <CardHeader className="space-y-1">
         <CardTitle>
           <h2>{title}</h2>
         </CardTitle>
         <CardDescription className="md:whitespace-nowrap">
-          <p>{description}</p>
+          <p>
+            <small>{description}</small>
+          </p>
         </CardDescription>
       </CardHeader>
     </Card>

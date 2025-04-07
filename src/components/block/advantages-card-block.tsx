@@ -1,40 +1,30 @@
-import {
-  BarChart,
-  Clock,
-  HeadphonesIcon,
-  Lock,
-  Shield,
-  Zap,
-} from "lucide-react";
+import { BarChart, HeadphonesIcon, Shield, Zap } from "lucide-react";
 import AdvantagesCard from "~/components/ui/advantages-card";
+import contentData from "../../../src/content.ru.json";
+
+const iconComponents = {
+  Zap: Zap,
+  BarChart: BarChart,
+  HeadphonesIcon: HeadphonesIcon,
+  Shield: Shield,
+} as const;
 
 const AdvantagesCardBlock = () => {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-4">
-      <AdvantagesCard
-        title="Fast Implementation"
-        description="Quick deployment of solutions to minimize disruption to your business operations."
-        icon={<Zap className="h-6 w-6" />}
-        iconColor="blue-400"
-      />
-      <AdvantagesCard
-        title="Data Analytics"
-        description="Transform raw data into actionable insights with our powerful analytics tools."
-        icon={<BarChart className="h-6 w-6" />}
-        iconColor="orange-400"
-      />
-      <AdvantagesCard
-        title="Dedicated Support"
-        description="Our support team is available 24/7 to help you with any issues that may arise."
-        icon={<HeadphonesIcon className="h-6 w-6" />}
-        iconColor="rose-400"
-      />
-      <AdvantagesCard
-        title="Enhanced Security"
-        description="Industry-leading security measures to protect your data and privacy."
-        icon={<Shield className="h-6 w-6" />}
-        iconColor="green-400"
-      />
+    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+      {contentData.advantages.cards.map((card, index) => {
+        const IconComponent =
+          iconComponents[card.icon as keyof typeof iconComponents];
+        return (
+          <AdvantagesCard
+            key={index}
+            title={card.title}
+            description={card.description}
+            icon={<IconComponent className="h-6 w-6" />}
+            iconColor={card.iconColor}
+          />
+        );
+      })}
     </div>
   );
 };

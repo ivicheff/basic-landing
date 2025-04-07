@@ -16,17 +16,20 @@ import { Button } from "~/components/ui/button";
 import { Card, CardContent } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
 import { Textarea } from "~/components/ui/textarea";
+import contentData from "~/content.ru.json";
 import { handleForm } from "~/lib/actions";
+import type { ContentData } from "~/types/content";
+
+const content = contentData as ContentData;
+const formContent = content.contacts.form;
 
 const CustomForm = () => {
   const [loading, setLoading] = useState(false);
 
   const formSchema = z.object({
-    email: z.string().email("Please enter a valid email"),
-    name: z.string().min(2, "Name must contain at least 2 characters"),
-    message: z
-      .string()
-      .min(10, "Message must contain at least 10 characters"),
+    email: z.string().email(formContent.fields.email.error),
+    name: z.string().min(2, formContent.fields.name.error),
+    message: z.string().min(10, formContent.fields.message.error),
   });
 
   type FormData = z.infer<typeof formSchema>;
@@ -53,13 +56,13 @@ const CustomForm = () => {
       if (result?.message) {
         alert(result.message);
       } else {
-        alert("Form sent successfully!");
+        alert(formContent.success);
       }
     } catch (error) {
       if (error instanceof Error) {
         alert(error.message);
       } else {
-        alert("An error occurred while sending the form");
+        alert(formContent.error);
       }
     } finally {
       setLoading(false);
@@ -81,10 +84,13 @@ const CustomForm = () => {
                 render={({ field }) => (
                   <FormItem className="w-full">
                     <FormLabel>
-                      <p>Name</p>
+                      <p>{formContent.fields.name.label}</p>
                     </FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Your name" />
+                      <Input
+                        {...field}
+                        placeholder={formContent.fields.name.placeholder}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -96,10 +102,13 @@ const CustomForm = () => {
                 render={({ field }) => (
                   <FormItem className="w-full">
                     <FormLabel>
-                      <p>Email</p>
+                      <p>{formContent.fields.email.label}</p>
                     </FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Your email" />
+                      <Input
+                        {...field}
+                        placeholder={formContent.fields.email.placeholder}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -111,13 +120,13 @@ const CustomForm = () => {
                 render={({ field }) => (
                   <FormItem className="w-full">
                     <FormLabel>
-                      <p>Message</p>
+                      <p>{formContent.fields.message.label}</p>
                     </FormLabel>
                     <FormControl className="h-32">
                       <Textarea
                         {...field}
                         className="h-32"
-                        placeholder="Your message"
+                        placeholder={formContent.fields.message.placeholder}
                       />
                     </FormControl>
                     <FormMessage />
@@ -125,8 +134,10 @@ const CustomForm = () => {
                 )}
               />
 
-              <Button type="submit" className="w-full mt-2" disabled={loading}>
-                {loading ? "Sending..." : "Send Message"}
+              <Button type="submit" className="mt-2 w-full" disabled={loading}>
+                {loading
+                  ? formContent.button.loading
+                  : formContent.button.default}
               </Button>
             </div>
           </form>

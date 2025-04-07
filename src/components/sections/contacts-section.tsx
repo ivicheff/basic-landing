@@ -1,10 +1,11 @@
 "use client";
 
 import { Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useRef } from "react";
 import FormCard from "~/components/ui/form-card";
-import Link from "next/link";
+import contentData from "../../../src/content.ru.json";
 
 const yandexMapApiKey = process.env.NEXT_PUBLIC_YANDEX_MAPS_API_KEY;
 // Определение типов для Яндекс.Карт
@@ -77,20 +78,19 @@ const ContactsSection = () => {
         className="mx-auto w-full max-w-[1632px] flex-col gap-8"
         id="contacts"
       >
-        <div className="pb-8 flex flex-col items-center gap-2">
-          <h2 className="text-center">Get In Touch</h2>
-          <p className="max-w-2xl text-center text-muted-foreground">
-            Have questions or ready to start? Contact us today for a free
-            consultation.
+        <div className="flex flex-col items-center gap-2 pb-8">
+          <h2 className="text-center">{contentData.contacts.title}</h2>
+          <p className="text-muted-foreground max-w-2xl text-center">
+            {contentData.contacts.description}
           </p>
         </div>
         <div className="flex w-full flex-col gap-8 lg:flex-row">
-          <div className="w-full lg:w-1/2 ">
+          <div className="w-full lg:w-1/2">
             <FormCard />
           </div>
           <div className="w-full lg:w-1/2">
             <div className="mb-6">
-              <h3 className="mb-4">Contact Information</h3>
+              <h3 className="mb-4">{contentData.contacts.title}</h3>
               <div className="flex flex-col gap-6">
                 <div className="flex items-start gap-4">
                   <Phone className="mt-1 h-6 w-6" />

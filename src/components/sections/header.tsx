@@ -10,7 +10,11 @@ import {
   SheetTrigger,
 } from "~/components/ui/sheet";
 import SocialIcons from "~/components/ui/social-icons";
+import contentData from "~/content.ru.json";
+import type { ContentData } from "~/types/content";
 import CustomLink from "../ui/custom-link";
+
+const content = contentData as ContentData;
 
 const Header = () => {
   return (
@@ -18,20 +22,19 @@ const Header = () => {
       <div>
         <h2>Logo</h2>
       </div>
-      <div className="flex gap-8 max-2xl:hidden text-muted-foreground">
+      <div className="text-muted-foreground flex gap-8 max-2xl:hidden">
         <Link href="tel:+15551234567">+1 (555) 123-4567</Link>
         <Link href="mailto:info@example.com">info@example.com</Link>
       </div>
       <div className="hidden items-center gap-20 xl:flex">
         <nav className="flex items-center gap-9">
-          <CustomLink href="/">Home</CustomLink>
-          <CustomLink href="#about">About</CustomLink>
-          <CustomLink href="#services">Services</CustomLink>
-          <CustomLink href="#testimonials">Testimonials</CustomLink>
-          <CustomLink href="#faq">FAQ</CustomLink>
-          <CustomLink href="#contacts">Contacts</CustomLink>
+          {content.header.navigation.map((item) => (
+            <CustomLink key={item.url} href={item.url}>
+              {item.text}
+            </CustomLink>
+          ))}
         </nav>
-        <Button>Get Started</Button>
+        <Button>{content.header.cta.text}</Button>
       </div>
       <div className="xl:hidden">
         <Sheet>
@@ -42,25 +45,29 @@ const Header = () => {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle className="text-3xl font-bold">Logo</SheetTitle>
+              <SheetTitle className="text-3xl font-bold">
+                {content.header.logo}
+              </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col items-start space-y-5 p-4 text-xl">
-              <CustomLink href="#home">Home</CustomLink>
-              <CustomLink href="#about">About</CustomLink>
-              <CustomLink href="#services">Services</CustomLink>
-              <CustomLink href="#testimonials">Testimonials</CustomLink>
-              <CustomLink href="#faq">FAQ</CustomLink>
-              <CustomLink href="#contacts">Contacts</CustomLink>
+              {content.header.navigation.map((item) => (
+                <CustomLink key={item.url} href={item.url}>
+                  {item.text}
+                </CustomLink>
+              ))}
             </nav>
             <div className="text-md text-muted-foreground flex flex-col gap-8 p-4">
               <div className="flex flex-col gap-2">
-                <Link href="tel:+15551234567">+1 (555) 123-4567</Link>
-                <Link href="mailto:info@example.com">info@example.com</Link>
+                {content.header.contacts.map((contact) => (
+                  <Link key={contact.url} href={contact.url}>
+                    {contact.text}
+                  </Link>
+                ))}
               </div>
               <SocialIcons />
             </div>
             <SheetFooter>
-              <Button className="w-full">Get Started</Button>
+              <Button className="w-full">{content.header.cta.text}</Button>
             </SheetFooter>
           </SheetContent>
         </Sheet>

@@ -1,27 +1,22 @@
+import CustomForm from "~/components/forms/custom-form";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "~/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
-import CustomForm from "~/components/forms/custom-form";
-import NewsletterForm from "~/components/forms/newsletter-form";
+import contentData from "../../../src/content.ru.json";
 
 const FormCard = () => {
   return (
-    <Card className="flex flex-col pb-8 h-full justify-between gap-3">
+    <Card className="flex h-full flex-col justify-between gap-3 pb-8">
       <CardHeader className="gap-3">
         <CardTitle>
-          <h3>Send Us a Message</h3>
+          <h3>{contentData.contacts.form.title}</h3>
         </CardTitle>
         <CardDescription>
-          <p>
-            Fill out the form below and we&apos;ll get back to you as soon as
-            possible.
-          </p>
+          <p>{contentData.contacts.form.description}</p>
         </CardDescription>
       </CardHeader>
       <CardContent>

@@ -1,35 +1,32 @@
+import Image from "next/image";
+import Link from "next/link";
 import { Button } from "~/components/ui/button";
+import contentData from "../../../src/content.ru.json";
 import AvatarStack from "../patterns/avatar-stack";
 import PlatformCardStack from "../patterns/platform-card-stack";
-import Image from "next/image";
 
 const HeroSection = () => {
   return (
     <section className="mx-auto flex max-w-[1632px] flex-col gap-5 md:gap-10 lg:flex-row">
       <div className="flex flex-1 flex-col justify-end gap-5">
         <div className="flex flex-col gap-2">
-          <h1 className="">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut.
-          </h1>
+          <h1 className="">{contentData.hero.title}</h1>
           <p className="text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-            vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
-            ornare leo, non suscipit magna interdum eu.
+            {contentData.hero.description}
           </p>
         </div>
         <div className="flex items-center justify-between gap-5">
           <div className="flex flex-col gap-5">
             <Button variant="cta" size="lg">
-              Get Started
+              <Link href={contentData.hero.cta.url}>
+                {contentData.hero.cta.text}
+              </Link>
             </Button>
             <div className="flex flex-col gap-1">
               <AvatarStack />
               <p className="max-w-96 leading-none">
-                <small className="leading-none text-muted-foreground">
-                  40,000+ Service Business Owners have already flipped the
-                  script on client generation and you can too...
+                <small className="text-muted-foreground leading-none">
+                  {contentData.hero.testimonialText}
                 </small>
               </p>
             </div>
