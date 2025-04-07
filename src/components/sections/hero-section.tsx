@@ -27,7 +27,7 @@ const HeroSection = () => {
             <div className="flex flex-col gap-1">
               <AvatarStack />
               <p className="max-w-96 leading-none">
-                <small className="leading-none">
+                <small className="leading-none text-muted-foreground">
                   40,000+ Service Business Owners have already flipped the
                   script on client generation and you can too...
                 </small>
