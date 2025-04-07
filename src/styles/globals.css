@@ -123,15 +123,15 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-pretty;
   }
   /* Адаптивные заголовки */
   h1 {
-    @apply text-[2.125rem] leading-tight font-bold md:text-[3rem];
+    @apply text-[2.125rem] leading-tight font-black md:text-[3rem];
   }
 
   h2 {
-    @apply text-[1.5rem] leading-tight font-bold md:text-[2.5rem];
+    @apply text-[1.5rem] leading-tight font-black md:text-[2.5rem];
   }
 
   h3 {

@@ -9,7 +9,7 @@ import { cn } from "~/lib/utils"
 function Accordion({
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Root>) {
-  return <AccordionPrimitive.Root data-slot="accordion" {...props} />
+  return <AccordionPrimitive.Root data-slot="accordion"   {...props} />
 }
 
 function AccordionItem({
@@ -19,7 +19,7 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn("border-b last:border-b-0", className)}
+      className={cn(" border-b last:border-b-0", className)}
       {...props}
     />
   )

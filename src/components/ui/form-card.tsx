@@ -7,10 +7,12 @@ import {
   CardTitle,
 } from "~/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
+import CustomForm from "~/components/forms/custom-form";
+import NewsletterForm from "~/components/forms/newsletter-form";
 
 const FormCard = () => {
   return (
-    <Card className="flex flex-col gap-3">
+    <Card className="flex flex-col pb-8  gap-3">
       <CardHeader className="gap-3">
         <CardTitle>
           <h3>Send Us a Message</h3>
@@ -23,11 +25,7 @@ const FormCard = () => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form>
-          <div>
-            <label htmlFor="name">Name</label>
-          </div>
-        </form>
+        <CustomForm />
       </CardContent>
     </Card>
   );

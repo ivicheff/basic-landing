@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
   variable: "--font-roboto-sans",
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "900"],
 });
 
 export default function RootLayout({

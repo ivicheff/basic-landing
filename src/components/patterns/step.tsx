@@ -1,25 +1,40 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { Separator } from "~/components/ui/separator";
+import { cn } from "~/lib/utils";
 
 interface StepProps {
   image: string;
   title: string;
   description: ReactNode;
   number: number;
+  reverse?: boolean;
 }
 
-const Step = ({ image, title, description, number }: StepProps) => {
+const Step = ({
+  image,
+  title,
+  description,
+  number,
+  reverse = false,
+}: StepProps) => {
   return (
-    <div className="flex gap-2 md:gap-10">
-      <div className="flex w-full flex-1 flex-col gap-2 max-md:hidden">
-        <Image
-          src={image}
-          className="h-auto w-full rounded-md object-cover"
-          alt="Step"
-          width={100}
-          height={100}
-        />
+    <div
+      className={cn(
+        "flex gap-2 md:gap-8 xl:gap-10",
+        reverse && "md:flex-row-reverse",
+      )}
+    >
+      <div className={cn("flex w-full flex-1 flex-col gap-2 max-md:hidden")}>
+        <div className="relative mt-1 mb-10 aspect-video w-full">
+          <Image
+            src={image}
+            className="rounded-lg object-cover"
+            alt="Step"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
       </div>
       <div className="flex w-fit">
         <div className="flex h-full flex-col items-center gap-3 md:gap-5">
@@ -29,16 +44,25 @@ const Step = ({ image, title, description, number }: StepProps) => {
           <Separator className="flex-1 border-1" orientation="vertical" />
         </div>
       </div>
-      <div className="flex flex-1 flex-col gap-4 md:gap-5">
-        <Image
-          src={image}
-          className="h-auto w-full rounded-md object-cover md:hidden"
-          alt="Step"
-          width={100}
-          height={100}
-        />
-        <h3>{title}</h3>
-        {description}
+      <div
+        className={cn(
+          "mb-5 flex flex-1 flex-col gap-5 md:gap-5",
+          reverse && "md:text-right",
+        )}
+      >
+        <div className="flex flex-col gap-5">
+          <h3>{title}</h3>
+          {description}
+        </div>
+        <div className="relative aspect-video w-full md:hidden">
+          <Image
+            src={image}
+            className="rounded-lg object-cover"
+            alt="Step"
+            fill
+            sizes="100vw"
+          />
+        </div>
       </div>
     </div>
   );
