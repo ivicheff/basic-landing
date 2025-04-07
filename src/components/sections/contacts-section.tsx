@@ -73,18 +73,18 @@ const ContactsSection = () => {
         }}
       />
       <section
-        className="mx-auto w-full max-w-[1632px] flex-col gap-8 px-4 md:px-8"
+        className="mx-auto w-full max-w-[1632px] flex-col gap-8"
         id="contacts"
       >
-        <div className="mb-10 flex flex-col items-center">
+        <div className="pb-8 flex flex-col items-center gap-2">
           <h2 className="text-center">Get In Touch</h2>
-          <p className="max-w-2xl text-center">
+          <p className="max-w-2xl text-center text-muted-foreground">
             Have questions or ready to start? Contact us today for a free
             consultation.
           </p>
         </div>
         <div className="flex w-full flex-col gap-8 lg:flex-row">
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 ">
             <FormCard />
           </div>
           <div className="w-full lg:w-1/2">
@@ -95,21 +95,23 @@ const ContactsSection = () => {
                   <Phone className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
                     <p className="font-medium">Phone</p>
-                    <p>+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
                     <p className="font-medium">Email</p>
-                    <p>info@example.com</p>
+                    <p className="text-muted-foreground">info@example.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
                     <p className="font-medium">Address</p>
-                    <p>123 Business Avenue, Suite 100, New York, NY 10001</p>
+                    <p className="text-muted-foreground">
+                      123 Business Avenue, Suite 100, New York, NY 10001
+                    </p>
                   </div>
                 </div>
               </div>

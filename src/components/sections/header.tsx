@@ -12,7 +12,7 @@ import CustomLink from "../ui/custom-link";
 
 const Header = () => {
   return (
-    <header className="mx-auto flex max-w-[1632px] items-center justify-between py-3  px-4 md:px-8">
+    <header className="mx-auto flex max-w-[1632px] items-center justify-between px-4 py-3 md:px-8">
       <div>
         <h2>Logo</h2>
       </div>
@@ -30,15 +30,15 @@ const Header = () => {
       <div className="xl:hidden">
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="p-0">
-              <Menu className="h-12 w-12" />
+            <Button variant="ghost" size="icon" className="">
+              <Menu className="size-7" />
             </Button>
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle>Logo</SheetTitle>
+              <SheetTitle className="text-3xl font-bold">Logo</SheetTitle>
             </SheetHeader>
-            <nav className="flex flex-col items-start space-y-4 p-6">
+            <nav className="flex flex-col items-start space-y-5 p-4 text-xl">
               <CustomLink href="#home">Home</CustomLink>
               <CustomLink href="#about">About</CustomLink>
               <CustomLink href="#services">Services</CustomLink>

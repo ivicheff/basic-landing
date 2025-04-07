@@ -18,9 +18,9 @@ const AboutSection = () => {
         </div>
       </div>
       <div className="flex flex-1 flex-col gap-4 md:gap-12">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2">
           <h2>About Our Company</h2>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 text-muted-foreground">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
               massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien

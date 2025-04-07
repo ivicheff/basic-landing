@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="mx-auto flex max-w-[1632px] flex-col gap-10 px-4 md:px-8 lg:flex-row">
-      <div className="flex flex-1 flex-col gap-5">
-        <div className="flex flex-col gap-4">
+    <section className="mx-auto flex max-w-[1632px] flex-col gap-5 md:gap-10 lg:flex-row">
+      <div className="flex flex-1 flex-col justify-end gap-5">
+        <div className="flex flex-col gap-2">
           <h1 className="">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut.
           </h1>
-          <p>
+          <p className="text-muted-foreground">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
             mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
             fringilla, mattis ligula consectetur, ultrices mauris. Maecenas

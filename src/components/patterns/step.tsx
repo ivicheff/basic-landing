@@ -52,7 +52,7 @@ const Step = ({
       >
         <div className="flex flex-col gap-5">
           <h3>{title}</h3>
-          {description}
+          <div className="text-muted-foreground">{description}</div>
         </div>
         <div className="relative aspect-video w-full md:hidden">
           <Image

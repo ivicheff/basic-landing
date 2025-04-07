@@ -10,40 +10,70 @@ const Footer = () => {
       <div className="flex flex-col justify-between gap-8 md:flex-row md:flex-wrap">
         <div className="flex max-w-sm flex-col gap-4">
           <h2>Logo</h2>
-          <p>
+          <p className="text-muted-foreground">
             Providing innovative business solutions to help companies thrive in
             today&apos;s competitive landscape.
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:min-w-64">
           <h4>Quick Links</h4>
-          <CustomLink href="/">Home</CustomLink>
-          <CustomLink href="/about">About</CustomLink>
-          <CustomLink href="/services">Services</CustomLink>
-          <CustomLink href="/testimonials">Testimonials</CustomLink>
-          <CustomLink href="/faq">FAQ</CustomLink>
-          <CustomLink href="/contacts">Contacts</CustomLink>
+          <CustomLink className="text-muted-foreground" href="/">
+            Home
+          </CustomLink>
+          <CustomLink className="text-muted-foreground" href="/about">
+            About
+          </CustomLink>
+          <CustomLink className="text-muted-foreground" href="/services">
+            Services
+          </CustomLink>
+          <CustomLink className="text-muted-foreground" href="/testimonials">
+            Testimonials
+          </CustomLink>
+          <CustomLink className="text-muted-foreground" href="/pricing">
+            Pricing
+          </CustomLink>
+          <CustomLink className="text-muted-foreground" href="/steps">
+            FAQ
+          </CustomLink>
+          
         </div>
         <div className="flex flex-col gap-3 sm:min-w-sm">
           <h4>Services</h4>
-          <CustomLink href="/#services">Business Consulting</CustomLink>
-          <CustomLink href="/#services">Digital Marketing</CustomLink>
-          <CustomLink href="/#services">Software Development</CustomLink>
-          <CustomLink href="/#services">Data Analytics</CustomLink>
-          <CustomLink href="/#services">Cloud Solutions</CustomLink>
+          <CustomLink className="text-muted-foreground" href="/#services">
+            Business Consulting
+          </CustomLink>
+          <CustomLink className="text-muted-foreground" href="/#services">
+            Digital Marketing
+          </CustomLink>
+          <CustomLink className="text-muted-foreground" href="/#services">
+            Software Development
+          </CustomLink>
+          <CustomLink className="text-muted-foreground" href="/#services">
+            Data Analytics
+          </CustomLink>
         </div>
         <div className="flex flex-col gap-3">
           <h4>Subscribe</h4>
-          <p>Subscribe to our newsletter to receive updates and insights.</p>
+          <p className="text-muted-foreground">
+            Subscribe to our newsletter to receive updates and insights.
+          </p>
           <NewsletterForm />
         </div>
       </div>
-      <div className="border-border flex justify-between border-t py-5">
-        <p>© 2025 Your Company. All rights reserved.</p>
-        <div className="flex gap-8">
-          <CustomLink href="/privacy-policy">Privacy Policy</CustomLink>
-          <CustomLink href="/terms-of-service">Terms of Service</CustomLink>
-          <CustomLink href="/cookie-policy">Cookie Policy</CustomLink>
+      <div className="border-border flex flex-col-reverse justify-between border-t py-5 md:flex-row ">
+        <p className="text-muted-foreground pt-4 md:pt-0">
+          © 2025 Your Company. All rights reserved.
+        </p>
+        <div className="flex gap-2 md:gap-8  md:flex-row flex-col">
+          <CustomLink href="/privacy-policy" className="text-muted-foreground">
+            Privacy Policy
+          </CustomLink>
+          <CustomLink href="/terms-of-service" className="text-muted-foreground">
+            Terms of Service
+          </CustomLink>
+          <CustomLink href="/cookie-policy" className="text-muted-foreground">
+            Cookie Policy
+          </CustomLink>
         </div>
       </div>
     </footer>
