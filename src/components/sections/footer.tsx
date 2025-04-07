@@ -1,5 +1,7 @@
+import Link from "next/link";
 import NewsletterForm from "~/components/forms/newsletter-form";
 import CustomLink from "~/components/ui/custom-link";
+import SocialIcons from "~/components/ui/social-icons";
 
 const Footer = () => {
   return (
@@ -14,6 +16,7 @@ const Footer = () => {
             Providing innovative business solutions to help companies thrive in
             today&apos;s competitive landscape.
           </p>
+          <SocialIcons />
         </div>
         <div className="flex flex-col gap-3 sm:min-w-64">
           <h4>Quick Links</h4>
@@ -35,7 +38,6 @@ const Footer = () => {
           <CustomLink className="text-muted-foreground" href="/steps">
             FAQ
           </CustomLink>
-          
         </div>
         <div className="flex flex-col gap-3 sm:min-w-sm">
           <h4>Services</h4>
@@ -53,22 +55,46 @@ const Footer = () => {
           </CustomLink>
         </div>
         <div className="flex flex-col gap-3">
-          <h4>Subscribe</h4>
+          <h4>Contact Us</h4>
+          <Link
+            href="tel:+15551234567"
+            className="text-muted-foreground"
+          >
+            +1 (555) 123-4567
+          </Link>
+          <Link
+            href="mailto:info@example.com"
+            className="text-muted-foreground"
+          >
+            info@example.com
+          </Link>
+          <Link
+            href="https://maps.google.com/?q=123+Business+Avenue,+Suite+100,+New+York,+NY+10001"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground"
+          >
+            123 Business Avenue, Suite 100, New York, NY 10001
+          </Link>
+          <h4 className="pt-2">Subscribe</h4>
           <p className="text-muted-foreground">
             Subscribe to our newsletter to receive updates and insights.
           </p>
           <NewsletterForm />
         </div>
       </div>
-      <div className="border-border flex flex-col-reverse justify-between border-t py-5 md:flex-row ">
+      <div className="border-border flex flex-col-reverse justify-between border-t py-5 md:flex-row">
         <p className="text-muted-foreground pt-4 md:pt-0">
           © 2025 Your Company. All rights reserved.
         </p>
-        <div className="flex gap-2 md:gap-8  md:flex-row flex-col">
+        <div className="flex flex-col gap-2 md:flex-row md:gap-8">
           <CustomLink href="/privacy-policy" className="text-muted-foreground">
             Privacy Policy
           </CustomLink>
-          <CustomLink href="/terms-of-service" className="text-muted-foreground">
+          <CustomLink
+            href="/terms-of-service"
+            className="text-muted-foreground"
+          >
             Terms of Service
           </CustomLink>
           <CustomLink href="/cookie-policy" className="text-muted-foreground">

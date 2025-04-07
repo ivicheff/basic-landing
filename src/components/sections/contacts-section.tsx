@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Script from "next/script";
 import { useEffect, useRef } from "react";
 import FormCard from "~/components/ui/form-card";
+import Link from "next/link";
 
 const yandexMapApiKey = process.env.NEXT_PUBLIC_YANDEX_MAPS_API_KEY;
 // Определение типов для Яндекс.Карт
@@ -95,23 +96,38 @@ const ContactsSection = () => {
                   <Phone className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
                     <p className="font-medium">Phone</p>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <Link
+                      href="tel:+15551234567"
+                      className="text-muted-foreground"
+                    >
+                      +1 (555) 123-4567
+                    </Link>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
                     <p className="font-medium">Email</p>
-                    <p className="text-muted-foreground">info@example.com</p>
+                    <Link
+                      href="mailto:info@example.com"
+                      className="text-muted-foreground"
+                    >
+                      info@example.com
+                    </Link>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 h-6 w-6" />
                   <div className="flex flex-col">
                     <p className="font-medium">Address</p>
-                    <p className="text-muted-foreground">
+                    <Link
+                      href="https://maps.google.com/?q=123+Business+Avenue,+Suite+100,+New+York,+NY+10001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground"
+                    >
                       123 Business Avenue, Suite 100, New York, NY 10001
-                    </p>
+                    </Link>
                   </div>
                 </div>
               </div>
