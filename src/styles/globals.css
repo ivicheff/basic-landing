@@ -130,7 +130,7 @@
   }
   /* Адаптивные заголовки */
   h1 {
-    @apply text-[3rem] leading-none font-black text-pretty md:text-[4rem];
+    @apply text-[2.25rem] leading-none font-black text-pretty md:text-[4rem];
   }
 
   h2 {
