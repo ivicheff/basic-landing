@@ -7,7 +7,7 @@ import "./src/env.js";
 /** @type {import("next").NextConfig} */
 const config = {
   images: {
-    domains: ["github.com"],
+    domains: ["github.com", "vc7v703vlt.ufs.sh"],
   },
 };
 

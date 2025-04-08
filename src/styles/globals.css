@@ -42,6 +42,7 @@
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --star: oklch(79.15% 0.17 71.02);
+  --cta: oklch(0.45 0.25 250);
 }
 
 .dark {
@@ -77,6 +78,7 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   --color-star: oklch(79.15% 0.17 71.02);
+  --cta: oklch(0.45 0.25 250);
 }
 
 @theme inline {
@@ -116,6 +118,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-star: var(--star);
+  --color-cta: var(--cta);
 }
 
 @layer base {
@@ -127,7 +130,7 @@
   }
   /* Адаптивные заголовки */
   h1 {
-    @apply text-[2.125rem] leading-tight font-black md:text-[3rem];
+    @apply text-[3rem] leading-none font-black text-pretty md:text-[4rem];
   }
 
   h2 {

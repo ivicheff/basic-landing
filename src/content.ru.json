@@ -20,17 +20,17 @@
     "description": "Мы предоставляем комплексные бизнес-решения, которые помогают компаниям развиваться и достигать новых высот. Наш опыт и профессионализм - ваше конкурентное преимущество в современном мире.",
     "cta": { "text": "Начать сейчас", "url": "#" },
     "testimonialText": "Более 40,000+ владельцев бизнеса уже изменили подход к привлечению клиентов вместе с нами...",
-    "image": { "src": "/images/main/hero.png", "alt": "Главная" },
+    "image": { "src": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDnR96DrTv7mOfTZSWq1sNtGuAReiVwzLynP2c", "alt": "Главная" },
     "avatars": {
       "length": 7,
       "images": [
-        "/images/clients/person1.jpg",
-        "/images/clients/person2.jpg",
-        "/images/clients/person3.jpg",
-        "/images/clients/person4.jpg",
-        "/images/clients/person5.jpg",
-        "/images/clients/person6.jpg",
-        "/images/clients/person7.jpg"
+        "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDPM9HItJAkL4ENs8Kbu2DpHmxRAvq6jl1tTMF",
+        "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDBfGsbrm7iFdU4tY5EAnrxbD8cgPzhRQoHL0S",
+        "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoD7dAxQ6bE9LQ0VMs5dBNACDFGycK7Sv3YnJPw",
+        "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDPBTUMpAkL4ENs8Kbu2DpHmxRAvq6jl1tTMFC",
+        "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDKgIRbaBc3G74oQiAy2daJsZFMDpft5gSYmjx",
+        "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoD53KpnOL0jtKAdR4scw9mL75HN6YXyoUO8JbF",
+        "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoD5ibtJUL0jtKAdR4scw9mL75HN6YXyoUO8JbF"
       ],
       "fallbacks": ["АИ", "МС", "ЕП", "ДК", "ОЛ", "ВН", "РМ"],
       "alts": [
@@ -47,21 +47,21 @@
       {
         "rating": 4.9,
         "link": "https://example.com/reviews",
-        "image": "/images/brands/facebook.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoD5agJdNbL0jtKAdR4scw9mL75HN6YXyoUO8Jb",
         "title": "Facebook",
         "linkText": "Смотреть все отзывы"
       },
       {
         "rating": 4.8,
         "link": "https://example.com/reviews",
-        "image": "/images/brands/google.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoD9g48c9hQ8blvnW4XY2ugMLfZ05UxcEJsPme7",
         "title": "Google",
         "linkText": "Смотреть все отзывы"
       },
       {
         "rating": 4.7,
         "link": "https://example.com/reviews",
-        "image": "/images/brands/yandex.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDTebFvqktvWdkOg1qNn3L4op5zuZKVH7s06QX",
         "title": "Yandex",
         "linkText": "Смотреть все отзывы"
       }
@@ -103,7 +103,7 @@
       "Мы - команда профессионалов, стремящихся к инновациям и совершенству в каждом проекте. Наш опыт и знания позволяют нам предоставлять решения, которые действительно работают.",
       "С момента основания мы помогли сотням компаний трансформировать их бизнес и достичь впечатляющих результатов. Наш подход основан на глубоком понимании потребностей клиентов и современных технологических трендов."
     ],
-    "image": { "src": "/images/main/about.png", "alt": "О нас" },
+    "image": { "src": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDsl9CD8S1k3RZh9JcKn0xtINSGOEvpT4yiLAe", "alt": "О нас" },
     "statistics": [
       { "title": "100+", "description": "Довольных клиентов" },
       { "title": "98%", "description": "Удовлетворенность" },
@@ -119,21 +119,21 @@
         "title": "Бизнес-консалтинг",
         "description": "Комплексные стратегии для увеличения вашего присутствия онлайн и привлечения клиентов.",
         "price": "От 150 000 ₽/месяц",
-        "image": "/images/pricing/consulting.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDqS2I2qNGp9xAwZSUPLY2sMXBc5o3hvRitFnd",
         "buttonText": "Начать"
       },
       {
         "title": "Цифровой маркетинг",
         "description": "Комплексные маркетинговые стратегии для увеличения вашего присутствия онлайн и привлечения клиентов.",
         "price": "От 100 000 ₽/месяц",
-        "image": "/images/pricing/marketing.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDTEzeKNtvWdkOg1qNn3L4op5zuZKVH7s06QXb",
         "buttonText": "Начать"
       },
       {
         "title": "Разработка ПО",
         "description": "Комплексные решения для цифровой трансформации вашего бизнеса и автоматизации процессов.",
         "price": "От 500 000 ₽/проект",
-        "image": "/images/pricing/software.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDvfoFaxdfV6EPN8BLqWb3xCR2rAp9IdgHeThG",
         "buttonText": "Начать"
       }
     ]
@@ -147,31 +147,31 @@
       {
         "name": "Иван Петров",
         "jobTitle": "CEO",
-        "image": "/images/clients/person1.jpg",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDPM9HItJAkL4ENs8Kbu2DpHmxRAvq6jl1tTMF",
         "testimonial": "Этот продукт полностью изменил наш рабочий процесс. Он интуитивно понятен, мощный и приятный в использовании."
       },
       {
         "name": "Анна Иванова",
         "jobTitle": "CTO",
-        "image": "/images/clients/person2.jpg",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDBfGsbrm7iFdU4tY5EAnrxbD8cgPzhRQoHL0S",
         "testimonial": "Улучшения производительности, которые мы увидели после внедрения этого решения, впечатляют."
       },
       {
         "name": "Мария Козлова",
         "jobTitle": "Продакт-менеджер",
-        "image": "/images/clients/person3.jpg",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoD7dAxQ6bE9LQ0VMs5dBNACDFGycK7Sv3YnJPw",
         "testimonial": "Наша команда стала намного эффективнее после внедрения этой платформы. Очень рекомендую!"
       },
       {
         "name": "Дмитрий Николаев",
         "jobTitle": "Ведущий разработчик",
-        "image": "/images/clients/person4.jpg",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDPBTUMpAkL4ENs8Kbu2DpHmxRAvq6jl1tTMFC",
         "testimonial": "Возможности интеграции превосходны. Система отлично работает со всеми нашими существующими инструментами."
       },
       {
         "name": "Ольга Лебедева",
         "jobTitle": "Директор по маркетингу",
-        "image": "/images/clients/person5.jpg",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDKgIRbaBc3G74oQiAy2daJsZFMDpft5gSYmjx",
         "testimonial": "Аналитические функции дали нам инсайты, которых у нас никогда не было раньше. Это изменило нашу стратегию."
       }
     ]
@@ -197,7 +197,7 @@
           "Наша команда использует передовые технологии и методологии для создания эффективных и масштабируемых решений."
         ],
         "number": 2,
-        "image": "/images/steps/step2.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoD0ctbjqpGogSTdPjE52zpHbq3mCFiR8wUL9sG",
         "reverse": true
       },
       {
@@ -207,7 +207,7 @@
           "Мы обеспечиваем плавный переход и проводим обучение вашей команды для максимально эффективного использования новых инструментов."
         ],
         "number": 3,
-        "image": "/images/steps/step3.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDt8dd4FXHvWNLgyxqAbeQEiS4rRuFKnwMBfzX",
         "reverse": false
       },
       {

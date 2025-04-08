@@ -17,7 +17,7 @@ const HeroSection = () => {
         </div>
         <div className="flex items-center justify-between gap-5">
           <div className="flex flex-col gap-5">
-            <Button variant="cta" size="lg">
+            <Button variant="cta" size="lg" className="">
               <Link href={contentData.hero.cta.url}>
                 {contentData.hero.cta.text}
               </Link>
