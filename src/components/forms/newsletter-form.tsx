@@ -14,6 +14,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { handleNewsletterForm } from "~/lib/actions";
+import contentData from "../../../src/content.ru.json";
 
 const NewsletterForm = () => {
   const [loading, setLoading] = useState(false);
@@ -67,14 +68,14 @@ const NewsletterForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Enter your email" {...field} />
+                <Input placeholder={contentData.footer.newsletter.placeholder} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
         <Button type="submit" className="w-full" disabled={loading}>
-          {loading ? "Subscribing..." : "Subscribe"}
+          {loading ? contentData.footer.newsletter.loading : contentData.footer.newsletter.button}
         </Button>
       </form>
     </Form>

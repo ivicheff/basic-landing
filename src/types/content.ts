@@ -100,7 +100,42 @@ interface FormContent {
   error: string;
 }
 
-interface ContentData {
+export interface Link {
+  text: string;
+  url: string;
+}
+
+export interface FooterSection {
+  title: string;
+  items: Link[];
+}
+
+export interface ContactInfo {
+  title: string;
+  phone: string;
+  email: string;
+  address: string;
+}
+
+export interface Newsletter {
+  title: string;
+  description: string;
+  placeholder: string;
+  button: string;
+  loading: string;
+}
+
+export interface Footer {
+  description: string;
+  quickLinks: FooterSection;
+  services: FooterSection;
+  contactInfo: ContactInfo;
+  newsletter: Newsletter;
+  copyright: string;
+  legalLinks: Link[];
+}
+
+export interface ContentData {
   header: {
     logo: string;
     contacts: Contact[];
@@ -163,19 +198,5 @@ interface ContentData {
     };
     mapLocation: MapLocation;
   };
-  footer: {
-    logo: string;
-    description: string;
-    quickLinks: Navigation[];
-    services: Navigation[];
-    contactInfo: Contact[];
-    newsletter: {
-      title: string;
-      description: string;
-    };
-    copyright: string;
-    legalLinks: Navigation[];
-  };
+  footer: Footer;
 }
-
-export type { ContentData };

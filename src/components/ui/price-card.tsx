@@ -33,8 +33,10 @@ const PriceCard = ({
           src={image}
           className="h-[160px] w-full rounded-md object-cover"
           alt="Price"
-          width={100}
+          width={400}
           height={160}
+          quality={100}
+          priority
         />
       </CardContent>
       <CardHeader className="gap-3">

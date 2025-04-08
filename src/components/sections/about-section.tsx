@@ -11,9 +11,9 @@ const AboutSection = () => {
       <div className="flex h-full flex-1">
         <div className="relative h-full min-h-[500px] w-full">
           <Image
-            src="/default.png"
-            className="rounded-lg object-cover"
-            alt="About"
+            src={contentData.about.image.src}
+            className="rounded-lg object-cover w-full h-full"
+            alt={contentData.about.image.alt}
             fill
           />
         </div>

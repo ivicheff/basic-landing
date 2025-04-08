@@ -38,9 +38,9 @@ const HeroSection = () => {
       </div>
       <div className="flex-1">
         <Image
-          src="/default.png"
-          alt="Hero"
-          className="rounded-lg object-cover"
+          src={contentData.hero.image.src}
+          alt={contentData.hero.image.alt}
+          className="rounded-lg object-cover w-full h-full"
           width={1632}
           height={1088}
         />

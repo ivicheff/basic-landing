@@ -19,43 +19,43 @@ const Footer = () => {
           <SocialIcons />
         </div>
         <div className="flex flex-col gap-3 sm:min-w-64">
-          <h4>Quick Links</h4>
+          <h4>{contentData.footer.quickLinks.title}</h4>
           <CustomLink className="text-muted-foreground" href="/">
-            Home
+            {contentData.footer.quickLinks.items?.[0]?.text}
           </CustomLink>
           <CustomLink className="text-muted-foreground" href="/about">
-            About
+            {contentData.footer.quickLinks.items?.[1]?.text}
           </CustomLink>
           <CustomLink className="text-muted-foreground" href="/services">
-            Services
+            {contentData.footer.quickLinks.items?.[2]?.text}
           </CustomLink>
           <CustomLink className="text-muted-foreground" href="/testimonials">
-            Testimonials
+            {contentData.footer.quickLinks.items?.[3]?.text}
           </CustomLink>
           <CustomLink className="text-muted-foreground" href="/pricing">
-            Pricing
+            {contentData.footer.quickLinks.items?.[4]?.text}
           </CustomLink>
           <CustomLink className="text-muted-foreground" href="/steps">
-            FAQ
+            {contentData.footer.quickLinks.items?.[5]?.text}
           </CustomLink>
         </div>
         <div className="flex flex-col gap-3 sm:min-w-sm">
-          <h4>Services</h4>
+          <h4>{contentData.footer.services.title}</h4>
           <CustomLink className="text-muted-foreground" href="/#services">
-            Business Consulting
+            {contentData.footer.services.items?.[0]?.text}
           </CustomLink>
           <CustomLink className="text-muted-foreground" href="/#services">
-            Digital Marketing
+            {contentData.footer.services.items?.[1]?.text}
           </CustomLink>
           <CustomLink className="text-muted-foreground" href="/#services">
-            Software Development
+            {contentData.footer.services.items?.[2]?.text}
           </CustomLink>
           <CustomLink className="text-muted-foreground" href="/#services">
-            Data Analytics
+            {contentData.footer.services.items?.[3]?.text}
           </CustomLink>
         </div>
         <div className="flex flex-col gap-3">
-          <h4>Contact Us</h4>
+          <h4>{contentData.footer.contactInfo.title}</h4>
           <Link href="tel:+15551234567" className="text-muted-foreground">
             +1 (555) 123-4567
           </Link>
@@ -73,10 +73,8 @@ const Footer = () => {
           >
             123 Business Avenue, Suite 100, New York, NY 10001
           </Link>
-          <h4 className="pt-2">
-            {contentData.footer.newsletter.title}
-          </h4>
-          <p className="text-muted-foreground">
+          <h4 className="pt-2">{contentData.footer.newsletter.title}</h4>
+          <p className="text-muted-foreground max-w-sm">
             {contentData.footer.newsletter.description}
           </p>
           <NewsletterForm />
