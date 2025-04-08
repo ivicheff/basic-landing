@@ -32,7 +32,7 @@ const Step = ({
             className="rounded-lg object-cover"
             alt="Step"
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 48rem) 100vw, 50vw"
           />
         </div>
       </div>

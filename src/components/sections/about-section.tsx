@@ -9,7 +9,7 @@ const AboutSection = () => {
       id="about"
     >
       <div className="flex h-full flex-1">
-        <div className="relative h-full min-h-[500px] w-full">
+        <div className="relative h-full min-h-[31.25rem] w-full">
           <Image
             src={contentData.about.image.src}
             className="rounded-lg object-cover w-full h-full"

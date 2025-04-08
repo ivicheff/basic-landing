@@ -31,7 +31,7 @@ const PriceCard = ({
       <CardContent>
         <Image
           src={image}
-          className="h-[160px] w-full rounded-md object-cover"
+          className="h-[10rem] w-full rounded-md object-cover"
           alt="Price"
           width={400}
           height={160}

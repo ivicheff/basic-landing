@@ -13,7 +13,7 @@ const FAQSection = () => {
   }
 
   return (
-    <section className="mx-auto flex max-w-[1632px] flex-col" id="faq">
+    <section className="mx-auto flex max-w-[102rem] flex-col" id="faq">
       <div className="flex flex-col items-center gap-2 pb-8">
         <h2>{faqData.title}</h2>
         <p className="text-muted-foreground text-center">
@@ -22,7 +22,7 @@ const FAQSection = () => {
       </div>
       <FAQAccordionBlock />
       <div className="flex flex-col items-center gap-5 pt-10">
-        <p className="text-center">{faqData.callToAction.text}</p>
+        <h3 className="text-center">{faqData.callToAction.text}</h3>
         <Button variant="cta" size="lg">
           {faqData.callToAction.button.text}
         </Button>

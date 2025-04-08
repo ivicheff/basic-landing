@@ -75,7 +75,7 @@ const ContactsSection = () => {
         }}
       />
       <section
-        className="mx-auto w-full max-w-[1632px] flex-col gap-8"
+        className="mx-auto w-full max-w-[102rem] flex-col gap-8"
         id="contacts"
       >
         <div className="flex flex-col items-center gap-2 pb-8">
@@ -140,7 +140,7 @@ const ContactsSection = () => {
             </div>
             <div
               ref={mapRef}
-              className="mt-6 h-[300px] w-full overflow-hidden rounded-lg"
+              className="mt-6 h-[18.75rem] w-full overflow-hidden rounded-lg"
               aria-label="Map showing our office location"
             />
           </div>

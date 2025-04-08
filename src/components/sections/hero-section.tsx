@@ -7,7 +7,7 @@ import PlatformCardStack from "../patterns/platform-card-stack";
 
 const HeroSection = () => {
   return (
-    <section className="mx-auto flex max-w-[1632px] flex-col gap-5 md:gap-10 lg:flex-row">
+    <section className="mx-auto flex max-w-[102rem] flex-col gap-5 md:gap-10 lg:flex-row">
       <div className="flex flex-1 flex-col justify-end gap-5">
         <div className="flex flex-col gap-2">
           <h1 className="">{contentData.hero.title}</h1>

@@ -19,7 +19,7 @@ const content = contentData as unknown as ContentData;
 const Header = () => {
   return (
     <header className="bg-background/80 fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-sm">
-      <div className="mx-auto flex max-w-[1632px] items-center justify-between px-4 py-3 lg:px-8">
+      <div className="mx-auto flex max-w-[102rem] items-center justify-between px-4 py-3 lg:px-8">
         <div>
           <h2>Logo</h2>
         </div>

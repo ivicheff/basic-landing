@@ -7,7 +7,7 @@ import contentData from "../../../src/content.ru.json";
 const Footer = () => {
   return (
     <footer
-      className="mx-auto flex max-w-[1632px] flex-col gap-5 px-4 md:px-8"
+      className="mx-auto flex max-w-[102rem] flex-col gap-5 px-4 md:px-8"
       id="footer"
     >
       <div className="flex flex-col justify-between gap-8 md:flex-row md:flex-wrap">
