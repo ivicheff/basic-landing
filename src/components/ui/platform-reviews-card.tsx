@@ -25,7 +25,7 @@ const PlatformReviewsCard = ({
   linkText = `See all reviews`,
 }: PlatformReviewsCardProps) => {
   return (
-    <Card className="flex max-w-[13.75rem] flex-row items-center gap-2 px-2 pt-1 pb-2 justify-center rounded-lg">
+    <Card className="flex max-w-[13.75rem] flex-row items-center gap-2 px-4  pt-2 pb-2 justify-center rounded-md ">
       <Image
         src={image}
         className=""
@@ -42,12 +42,12 @@ const PlatformReviewsCard = ({
         <CardContent className="flex items-center gap-2">
           <div className="flex gap-1 items-center">
             <span className="text-star leading-[1.4375rem]">{rating}</span>
-            <div className="flex h-5">
-              <Star className=" fill-star stroke-star h-5 w-5" />
-              <Star className=" fill-star stroke-star h-5 w-5" />
-              <Star className=" fill-star stroke-star h-5 w-5" />
-              <Star className=" fill-star stroke-star h-5 w-5" />
-              <Star className=" fill-star stroke-star h-5 w-5" />
+            <div className="flex h-5 gap-[.08rem] items-center">
+              <Star className=" fill-star stroke-star h-[1.1rem] w-[1.1rem]" />
+              <Star className=" fill-star stroke-star h-[1.1rem] w-[1.1rem]" />
+              <Star className=" fill-star stroke-star h-[1.1rem] w-[1.1rem]" />
+              <Star className=" fill-star stroke-star h-[1.1rem] w-[1.1rem]" />
+              <Star className=" fill-star stroke-star h-[1.1rem] w-[1.1rem]" />
             </div>
           </div>
         </CardContent>

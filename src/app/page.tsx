@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="mx-auto flex max-w-[94rem] flex-col gap-20 px-4 pt-5 pb-10 md:pt-10 md:pb-20 lg:gap-30 lg:px-8 ">
+      <main className="mx-auto flex max-w-[94rem] flex-col gap-20 px-4 pt-5 pb-30 md:pt-10 md:pb-40 lg:gap-30 lg:px-8 ">
         <HeroSection />
         <AdvantagesSection />
         <AboutSection />

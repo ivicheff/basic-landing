@@ -3,7 +3,10 @@
     "logo": "Logo",
     "contacts": [
       { "text": "+1 (555) 123-4567", "url": "tel:+15551234567" },
-      { "text": "info@example.com", "url": "mailto:info@example.com" }
+      {
+        "text": "info@webapphorizon.com",
+        "url": "mailto:info@webapphorizon.com"
+      }
     ],
     "navigation": [
       { "text": "Home", "url": "/" },
@@ -70,8 +73,7 @@
       { "title": "98%", "description": "Client Satisfaction" },
       { "title": "12+", "description": "Years Experience" },
       { "title": "50+", "description": "Team Members" }
-    ],
-    
+    ]
   },
   "pricing": {
     "title": "Pricing",
@@ -229,8 +231,8 @@
         {
           "type": "email",
           "label": "Email",
-          "value": "info@example.com",
-          "url": "mailto:info@example.com"
+          "value": "info@webapphorizon.com",
+          "url": "mailto:info@webapphorizon.com"
         },
         {
           "type": "address",
@@ -264,7 +266,10 @@
     ],
     "contactInfo": [
       { "text": "+1 (555) 123-4567", "url": "tel:+15551234567" },
-      { "text": "info@example.com", "url": "mailto:info@example.com" },
+      {
+        "text": "info@webapphorizon.com",
+        "url": "mailto:info@webapphorizon.com"
+      },
       {
         "text": "123 Business Avenue, Suite 100, New York, NY 10001",
         "url": "https://maps.google.com/?q=123+Business+Avenue,+Suite+100,+New+York,+NY+10001"

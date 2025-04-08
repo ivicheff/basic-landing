@@ -113,10 +113,10 @@ const ContactsSection = () => {
                       {contentData.contacts.contactInfo?.items?.[1]?.label}
                     </p>
                     <Link
-                      href="mailto:info@example.com"
+                      href="mailto:info@webapphorizon.com"
                       className="text-muted-foreground"
                     >
-                      info@example.com
+                      info@webapphorizon.com
                     </Link>
                   </div>
                 </div>

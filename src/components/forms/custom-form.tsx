@@ -70,7 +70,7 @@ const CustomForm = () => {
   };
 
   return (
-    <Card className="border-none px-0 py-0 shadow-none">
+    <Card className=" px-0 py-0 border-none shadow-none">
       <CardContent className="h-full">
         <Form {...formInstance}>
           <form

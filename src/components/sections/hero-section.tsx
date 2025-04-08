@@ -17,7 +17,7 @@ const HeroSection = () => {
         </div>
         <div className="flex items-center justify-between gap-5">
           <div className="flex flex-col gap-5">
-            <Button variant="cta" size="lg" className="">
+            <Button variant="cta" size="lg" className="shadow-lg">
               <Link href={contentData.hero.cta.url}>
                 {contentData.hero.cta.text}
               </Link>
@@ -40,7 +40,7 @@ const HeroSection = () => {
         <Image
           src={contentData.hero.image.src}
           alt={contentData.hero.image.alt}
-          className="rounded-lg object-cover w-full h-full"
+          className="rounded-lg object-cover w-full h-full shadow-xl"
           width={1632}
           height={1088}
         />

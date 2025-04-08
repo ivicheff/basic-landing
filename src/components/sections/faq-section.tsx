@@ -23,7 +23,7 @@ const FAQSection = () => {
       <FAQAccordionBlock />
       <div className="flex flex-col items-center gap-5 pt-10">
         <h3 className="text-center">{faqData.callToAction.text}</h3>
-        <Button variant="cta" size="lg">
+        <Button variant="cta" size="lg" className="shadow-lg">
           {faqData.callToAction.button.text}
         </Button>
       </div>

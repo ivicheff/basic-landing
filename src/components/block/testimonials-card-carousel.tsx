@@ -44,7 +44,7 @@ const TestimonialsCardCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="mt-4 flex items-center justify-center gap-2">
+        <div className="mt-0 flex items-center justify-center gap-2">
           <CarouselPrevious className="static mx-1 translate-y-0" />
           <CarouselNext className="static mx-1 translate-y-0" />
         </div>

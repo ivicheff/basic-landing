@@ -43,7 +43,7 @@ export default function AdvantagesCard({
   return (
     <Card
       className={cn(
-        "gap-3 rounded-lg bg-transparent px-6 py-6 shadow-none",
+        "gap-3 rounded-lg bg-transparent px-6 py-6",
         className,
       )}
     >

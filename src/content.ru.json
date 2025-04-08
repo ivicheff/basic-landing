@@ -3,7 +3,10 @@
     "logo": "Лого",
     "contacts": [
       { "text": "+7 (999) 123-4567", "url": "tel:+79991234567" },
-      { "text": "info@example.com", "url": "mailto:info@example.com" }
+      {
+        "text": "info@webapphorizon.com",
+        "url": "mailto:info@webapphorizon.com"
+      }
     ],
     "navigation": [
       { "text": "Главная", "url": "/" },
@@ -20,7 +23,10 @@
     "description": "Мы предоставляем комплексные бизнес-решения, которые помогают компаниям развиваться и достигать новых высот. Наш опыт и профессионализм - ваше конкурентное преимущество в современном мире.",
     "cta": { "text": "Начать сейчас", "url": "#" },
     "testimonialText": "Более 40,000+ владельцев бизнеса уже изменили подход к привлечению клиентов вместе с нами...",
-    "image": { "src": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDnR96DrTv7mOfTZSWq1sNtGuAReiVwzLynP2c", "alt": "Главная" },
+    "image": {
+      "src": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDnR96DrTv7mOfTZSWq1sNtGuAReiVwzLynP2c",
+      "alt": "Главная"
+    },
     "avatars": {
       "length": 7,
       "images": [
@@ -103,7 +109,10 @@
       "Мы - команда профессионалов, стремящихся к инновациям и совершенству в каждом проекте. Наш опыт и знания позволяют нам предоставлять решения, которые действительно работают.",
       "С момента основания мы помогли сотням компаний трансформировать их бизнес и достичь впечатляющих результатов. Наш подход основан на глубоком понимании потребностей клиентов и современных технологических трендов."
     ],
-    "image": { "src": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDsl9CD8S1k3RZh9JcKn0xtINSGOEvpT4yiLAe", "alt": "О нас" },
+    "image": {
+      "src": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDsl9CD8S1k3RZh9JcKn0xtINSGOEvpT4yiLAe",
+      "alt": "О нас"
+    },
     "statistics": [
       { "title": "100+", "description": "Довольных клиентов" },
       { "title": "98%", "description": "Удовлетворенность" },
@@ -294,8 +303,8 @@
         {
           "type": "email",
           "label": "Почта",
-          "value": "info@example.com",
-          "url": "mailto:info@example.com"
+          "value": "info@webapphorizon.com",
+          "url": "mailto:info@webapphorizon.com"
         },
         {
           "type": "address",
@@ -335,7 +344,7 @@
     "contactInfo": {
       "title": "Контакты",
       "phone": "+1 (555) 123-4567",
-      "email": "info@example.com",
+      "email": "info@webapphorizon.com",
       "address": "123 Business Avenue, Suite 100, New York, NY 10001"
     },
     "newsletter": {

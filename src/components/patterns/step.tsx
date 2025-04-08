@@ -38,10 +38,10 @@ const Step = ({
       </div>
       <div className="flex w-fit">
         <div className="flex h-full flex-col items-center gap-3 md:gap-5">
-          <div className="flex h-7 w-7 items-center justify-center rounded-full border border-2 bg-transparent md:h-12 md:w-12">
+          <div className="flex h-7 w-7 items-center justify-center rounded-full border  bg-transparent md:h-12 md:w-12">
             <h3>{number}</h3>
           </div>
-          <Separator className="flex-1 border-1" orientation="vertical" />
+          <Separator className="flex-1 " orientation="vertical" />
         </div>
       </div>
       <div

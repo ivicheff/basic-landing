@@ -20,22 +20,26 @@ const Header = () => {
   return (
     <header className="bg-background/80 fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-sm">
       <div className="mx-auto flex max-w-[102rem] items-center justify-between px-4 py-3 lg:px-8">
-        <div>
+        <div className="">
           <h2>Logo</h2>
         </div>
-        <div className="text-muted-foreground flex gap-8 max-2xl:hidden">
+        <div className="text-muted-foreground flex flex-1 items-center justify-center gap-8 max-2xl:hidden">
           <Link href="tel:+15551234567">+1 (555) 123-4567</Link>
-          <Link href="mailto:info@example.com">info@example.com</Link>
+          <Link href="mailto:info@webapphorizon.com">
+            info@webapphorizon.com
+          </Link>
         </div>
-        <div className="hidden items-center gap-20 xl:flex">
-          <nav className="flex items-center gap-9">
+        <div className="hidden items-center gap-8 xl:flex 2xl:flex-1">
+          <nav className="flex items-center gap-9 text-nowrap">
             {content.header.navigation.map((item) => (
               <CustomLink key={item.url} href={item.url}>
                 {item.text}
               </CustomLink>
             ))}
           </nav>
-          <Button>{content.header.cta.text}</Button>
+          <Button className="min-w-40 flex-1 text-nowrap">
+            {content.header.cta.text}
+          </Button>
         </div>
         <div className="xl:hidden">
           <Sheet>
