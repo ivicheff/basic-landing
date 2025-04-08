@@ -11,7 +11,7 @@ const iconComponents = {
 
 const AdvantagesCardBlock = () => {
   return (
-    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
       {contentData.advantages.cards.map((card, index) => {
         const IconComponent =
           iconComponents[card.icon as keyof typeof iconComponents];

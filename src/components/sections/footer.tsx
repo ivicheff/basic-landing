@@ -7,7 +7,7 @@ import contentData from "../../../src/content.ru.json";
 const Footer = () => {
   return (
     <footer
-      className="mx-auto flex max-w-[102rem] flex-col gap-5 px-4 md:px-8"
+      className="mx-auto flex max-w-[102rem] flex-col gap-5 md:gap-8 px-4 md:px-8"
       id="footer"
     >
       <div className="flex flex-col justify-between gap-8 md:flex-row md:flex-wrap">
@@ -80,7 +80,7 @@ const Footer = () => {
           <NewsletterForm />
         </div>
       </div>
-      <div className="border-border flex flex-col-reverse justify-between border-t py-5 md:flex-row">
+      <div className="border-border flex flex-col-reverse justify-between border-t py-5 md:py-7 md:flex-row">
         <p className="text-muted-foreground pt-4 md:pt-0">
           {contentData.footer.copyright}
         </p>
