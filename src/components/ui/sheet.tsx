@@ -8,7 +8,7 @@ import * as React from "react";
 import { cn } from "~/lib/utils";
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
-  return <SheetPrimitive.Root data-slot="sheet" {...props} />;
+  return <SheetPrimitive.Root data-slot="sheet" {...props} modal={false} />;
 }
 
 function SheetTrigger({
@@ -53,6 +53,46 @@ function SheetContent({
 }: React.ComponentProps<typeof SheetPrimitive.Content> & {
   side?: "top" | "right" | "bottom" | "left";
 }) {
+  // Предотвращаем скролл страницы при открытии панели
+  React.useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+
+    const handleOpen = () => {
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    };
+
+    const handleClose = () => {
+      document.body.style.overflow = originalStyle;
+      document.body.style.paddingRight = "0px";
+    };
+
+    // Слушаем события открытия/закрытия
+    const element = document.querySelector("[data-slot='sheet-content']");
+    if (element) {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.attributeName === "data-state") {
+            const state = (mutation.target as HTMLElement).getAttribute(
+              "data-state",
+            );
+            if (state === "open") handleOpen();
+            if (state === "closed") handleClose();
+          }
+        });
+      });
+
+      observer.observe(element, { attributes: true });
+
+      return () => {
+        observer.disconnect();
+        handleClose();
+      };
+    }
+  }, []);
+
   return (
     <SheetPortal>
       <SheetOverlay />
@@ -86,7 +126,7 @@ function SheetHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="sheet-header"
-      className={cn("flex flex-col   gap-1.5 p-4", className)}
+      className={cn("flex flex-col gap-1.5 p-4", className)}
       {...props}
     />
   );
