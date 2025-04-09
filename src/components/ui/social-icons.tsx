@@ -1,38 +1,45 @@
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaXTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
 import CustomLink from "./custom-link";
+import contentData from "~/content.ru.json";
 
 const SocialIcons = () => {
   return (
     <div className="flex gap-4">
       <CustomLink
-        href="https://facebook.com"
+        href={contentData.links.socials.facebookUrl}
         className="text-muted-foreground hover:text-foreground transition-colors"
       >
-        <Facebook className="size-5" />
+        <FaFacebook className="size-5" />
       </CustomLink>
       <CustomLink
-        href="https://twitter.com"
+        href={contentData.links.socials.twitterUrl}
         className="text-muted-foreground hover:text-foreground transition-colors"
       >
-        <Twitter className="size-5" />
+        <FaXTwitter className="size-5" />
       </CustomLink>
       <CustomLink
-        href="https://instagram.com"
+        href={contentData.links.socials.instagramUrl}
         className="text-muted-foreground hover:text-foreground transition-colors"
       >
-        <Instagram className="size-5" />
+        <FaInstagram className="size-5" />
       </CustomLink>
       <CustomLink
-        href="https://linkedin.com"
+        href={contentData.links.socials.linkedinUrl}
         className="text-muted-foreground hover:text-foreground transition-colors"
       >
-        <Linkedin className="size-5" />
+        <FaLinkedin className="size-5" />
       </CustomLink>
       <CustomLink
-        href="https://youtube.com"
+        href={contentData.links.socials.youtubeUrl}
         className="text-muted-foreground hover:text-foreground transition-colors"
       >
-        <Youtube className="size-5" />
+        <FaYoutube className="size-5" />
       </CustomLink>
     </div>
   );
