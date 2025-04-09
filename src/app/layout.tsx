@@ -20,7 +20,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${roboto.variable}`}>
-      <body className="pt-[4.5rem]">{children}</body>
+      <body className="mt-[4.5rem]">{children}</body>
     </html>
   );
 }

@@ -7,7 +7,7 @@ import * as React from "react";
 import { cn } from "~/lib/utils";
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
-  return <SheetPrimitive.Root data-slot="sheet" {...props} modal={false} />;
+  return <SheetPrimitive.Root data-slot="sheet" {...props} />;
 }
 
 function SheetTrigger({
@@ -98,7 +98,7 @@ function SheetContent({
       <SheetPrimitive.Content
         data-slot="sheet-content"
         className={cn(
-          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out fixed z-50 flex flex-col gap-4 transition-all ease-in-out data-[state=closed]:shadow-none data-[state=closed]:duration-300 data-[state=open]:shadow-[0_0_25px_rgba(0,0,0,0.2),0_0_65px_rgba(0,0,0,0.3),0_0_125px_rgba(0,0,0,0.2),0_0_250px_rgba(0,0,0,0.15),5px_0_500px_rgba(59,130,246,0.15),-150px_0_300px_rgba(0,0,0,0.3)] data-[state=open]:duration-700",
+          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out fixed z-50 flex flex-col gap-4  ease-in-out shadow-lg data-[state=closed]:duration-300  data-[state=open]:duration-500",
           side === "right" &&
             "data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right inset-y-0 right-0 h-full w-3/4 border-l sm:max-w-sm",
           side === "left" &&
