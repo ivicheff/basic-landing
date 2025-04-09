@@ -99,10 +99,10 @@ const ContactsSection = () => {
                       {contentData.contacts.contactInfo?.items?.[0]?.label}
                     </p>
                     <Link
-                      href="tel:+15551234567"
+                      href={contentData.links.phone.url}
                       className="text-muted-foreground"
                     >
-                      +1 (555) 123-4567
+                      {contentData.links.phone.text}
                     </Link>
                   </div>
                 </div>
@@ -113,10 +113,10 @@ const ContactsSection = () => {
                       {contentData.contacts.contactInfo?.items?.[1]?.label}
                     </p>
                     <Link
-                      href="mailto:info@webapphorizon.com"
+                      href={contentData.links.email.url}
                       className="text-muted-foreground"
                     >
-                      info@webapphorizon.com
+                      {contentData.links.email.text}
                     </Link>
                   </div>
                 </div>
@@ -127,12 +127,12 @@ const ContactsSection = () => {
                       {contentData.contacts.contactInfo?.items?.[2]?.label}
                     </p>
                     <Link
-                      href="https://maps.google.com/?q=123+Business+Avenue,+Suite+100,+New+York,+NY+10001"
+                      href={contentData.links.address.mapUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground"
                     >
-                      123 Business Avenue, Suite 100, New York, NY 10001
+                      {contentData.links.address.text}
                     </Link>
                   </div>
                 </div>

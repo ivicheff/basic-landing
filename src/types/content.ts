@@ -135,6 +135,19 @@ export interface Footer {
   legalLinks: Link[];
 }
 
+export interface Links {
+  logo: {
+    src: string;
+    alt: string;
+    link: string;
+    text: string;
+  };
+  phone: {
+    text: string;
+    url: string;
+  };
+}
+
 export interface ContentData {
   header: {
     logo: string;

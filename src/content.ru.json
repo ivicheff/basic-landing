@@ -1,13 +1,53 @@
 {
+  "links": {
+    "logo": {
+      "src": "/images/logo/puzzle.png",
+      "alt": "Компания",
+      "link": "/",
+      "text": "Компания"
+    },
+    "phone": {
+      "text": "+7 (999) 123-4567",
+      "url": "tel:+79991234567"
+    },
+    "email": {
+      "text": "info@webapphorizon.com",
+      "url": "mailto:info@webapphorizon.com"
+    },
+    "address": {
+      "text": "123317, Москва, Пресненская наб., 12, ММДЦ «Москва-Сити»",
+      "mapUrl": "https://maps.google.com/?q=Пресненская+набережная+12+Москва"
+    },
+    "socials": {
+      "twitterUrl": "https://twitter.com/webapphorizon",
+      "facebookUrl": "https://www.facebook.com/webapphorizon",
+      "vkUrl": "https://vk.com/webapphorizon",
+      "yandexMapsUrl": "https://yandex.ru/maps/?ll=37.618423%2C55.755826&z=17",
+      "googleMapsUrl": "https://maps.google.com/?q=Пресненская+набережная+12+Москва",
+      "instagramUrl": "https://www.instagram.com/webapphorizon",
+      "linkedinUrl": "https://www.linkedin.com/company/webapphorizon",
+      "telegramUrl": "https://t.me/webapphorizon",
+      "whatsappUrl": "https://wa.me/webapphorizon",
+      "youtubeUrl": "https://www.youtube.com/webapphorizon",
+      "tiktokUrl": "https://www.tiktok.com/webapphorizon",
+      "pinterestUrl": "https://www.pinterest.com/webapphorizon",
+      "snapchatUrl": "https://www.snapchat.com/webapphorizon",
+      "vimeoUrl": "https://www.vimeo.com/webapphorizon",
+      "soundcloudUrl": "https://www.soundcloud.com/webapphorizon",
+      "spotifyUrl": "https://www.spotify.com/webapphorizon",
+      "appleMusicUrl": "https://www.applemusic.com/webapphorizon",
+      "amazonMusicUrl": "https://www.amazonmusic.com/webapphorizon",
+      "deezerUrl": "https://www.deezer.com/webapphorizon",
+      "bandcampUrl": "https://www.bandcamp.com/webapphorizon",
+      "mixcloudUrl": "https://www.mixcloud.com/webapphorizon",
+      "soundcloudUrl": "https://www.soundcloud.com/webapphorizon",
+      "spotifyUrl": "https://www.spotify.com/webapphorizon",
+      "appleMusicUrl": "https://www.applemusic.com/webapphorizon",
+      "amazonMusicUrl": "https://www.amazonmusic.com/webapphorizon",
+      "deezerUrl": "https://www.deezer.com/webapphorizon"
+    }
+  },
   "header": {
-    "logo": "Лого",
-    "contacts": [
-      { "text": "+7 (999) 123-4567", "url": "tel:+79991234567" },
-      {
-        "text": "info@webapphorizon.com",
-        "url": "mailto:info@webapphorizon.com"
-      }
-    ],
     "navigation": [
       { "text": "Главная", "url": "/" },
       { "text": "О нас", "url": "#about" },
@@ -16,12 +56,12 @@
       { "text": "FAQ", "url": "#faq" },
       { "text": "Контакты", "url": "#contacts" }
     ],
-    "cta": { "text": "Начать", "url": "#" }
+    "cta": { "text": "Начать", "url": "/#contacts" }
   },
   "hero": {
     "title": "Инновационные решения для вашего бизнеса",
     "description": "Мы предоставляем комплексные бизнес-решения, которые помогают компаниям развиваться и достигать новых высот. Наш опыт и профессионализм - ваше конкурентное преимущество в современном мире.",
-    "cta": { "text": "Начать сейчас", "url": "#" },
+    "cta": { "text": "Начать сейчас", "url": "/#contacts" },
     "testimonialText": "Более 40,000+ владельцев бизнеса уже изменили подход к привлечению клиентов вместе с нами...",
     "image": {
       "src": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDnR96DrTv7mOfTZSWq1sNtGuAReiVwzLynP2c",
@@ -196,7 +236,7 @@
           "Мы определяем ключевые показатели эффективности и составляем детальный план действий, учитывающий все аспекты вашего бизнеса."
         ],
         "number": 1,
-        "image": "/images/steps/step1.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDeGPw4K8uRAkV4gQjlmxr5EiSUzeqF8BdbMYv",
         "reverse": false
       },
       {
@@ -226,7 +266,7 @@
           "Регулярный анализ и оптимизация помогают достигать максимальной эффективности и результативности."
         ],
         "number": 4,
-        "image": "/images/steps/step4.png",
+        "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDVc5IxE9HhT2akm0S3v1y4lMgeGqBozDZrI7O",
         "reverse": true
       }
     ]
@@ -258,7 +298,8 @@
     ],
     "callToAction": {
       "text": "Не нашли ответ на свой вопрос? Свяжитесь с нами напрямую, и мы будем рады помочь.",
-      "button": { "text": "Связаться с нами", "url": "#contacts" }
+      "button": { "text": "Связаться с нами", "url": "/#contacts" }
+
     }
   },
   "contacts": {
@@ -296,21 +337,15 @@
       "items": [
         {
           "type": "phone",
-          "label": "Телефон",
-          "value": "+7 (999) 123-4567",
-          "url": "tel:+79991234567"
+          "label": "Телефон"
         },
         {
           "type": "email",
-          "label": "Почта",
-          "value": "info@webapphorizon.com",
-          "url": "mailto:info@webapphorizon.com"
+          "label": "Почта"
         },
         {
           "type": "address",
-          "label": "Адрес",
-          "value": "123317, Москва, Пресненская наб., 12, ММДЦ «Москва-Сити»",
-          "url": "https://maps.google.com/?q=Пресненская+набережная+12+Москва"
+          "label": "Адрес"
         }
       ]
     },
@@ -342,10 +377,7 @@
       ]
     },
     "contactInfo": {
-      "title": "Контакты",
-      "phone": "+1 (555) 123-4567",
-      "email": "info@webapphorizon.com",
-      "address": "123 Business Avenue, Suite 100, New York, NY 10001"
+      "title": "Контакты"
     },
     "newsletter": {
       "title": "Подписка на новости",

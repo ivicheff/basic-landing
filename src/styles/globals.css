@@ -155,7 +155,7 @@ html {
   }
 
   h3 {
-    @apply text-[1.25rem] leading-tight font-semibold md:text-[1.75rem];
+    @apply text-[1.25rem] leading-tight font-bold md:text-[1.75rem];
   }
 
   h4 {

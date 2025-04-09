@@ -4,7 +4,7 @@ import CustomLink from "~/components/ui/custom-link";
 import SocialIcons from "~/components/ui/social-icons";
 import contentData from "../../../src/content.ru.json";
 import { Separator } from "~/components/ui/separator";
-
+import Logo from "~/components/ui/logo";
 const Footer = () => {
   return (
     <footer
@@ -16,31 +16,28 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <h4 className="w-fit">{contentData.footer.contactInfo.title}</h4>
             <div className="flex flex-col gap-3">
-              <Link href="tel:+15551234567" className="text-muted-foreground">
-                +1 (555) 123-4567
+              <Link href={contentData.links.phone.url} className="text-muted-foreground">
+                {contentData.links.phone.text}
               </Link>
               <Link
-                href="mailto:info@webapphorizon.com"
+                href={contentData.links.email.url}
                 className="text-muted-foreground"
               >
-                info@webapphorizon.com
+                {contentData.links.email.text}
               </Link>
               <Link
-                href="https://maps.google.com/?q=123+Business+Avenue,+Suite+100,+New+York,+NY+10001"
+                href={contentData.links.address.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground"
               >
-                123 Business Avenue, Suite 100, New York, NY 10001
+                {contentData.links.address.text}
               </Link>
             </div>
             <SocialIcons />
           </div>
           <div className="flex flex-col gap-2">
-            <h2>Company</h2>
-            <p className="text-muted-foreground">
-              {contentData.footer.description}
-            </p>
+            <Logo />
           </div>
         </div>
         <div className="flex flex-col gap-4">

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -15,6 +16,7 @@ interface FAQAccordionBlockProps {
 
 const FAQAccordionBlock = ({ questions }: FAQAccordionBlockProps) => {
   const faqItems = questions ?? (contentData as ContentData).faq.questions;
+  const [openItem, setOpenItem] = useState<string | undefined>(undefined);
 
   if (!faqItems?.length) {
     return null;
@@ -26,6 +28,8 @@ const FAQAccordionBlock = ({ questions }: FAQAccordionBlockProps) => {
         <Accordion
           key={`faq-${index}`}
           type="single"
+          value={openItem}
+          onValueChange={setOpenItem}
           collapsible
           className="border-b"
         >
