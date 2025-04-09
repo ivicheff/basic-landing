@@ -79,11 +79,12 @@ const Header = () => {
               </nav>
               <div className="text-md text-muted-foreground flex flex-col gap-8 p-4">
                 <div className="flex flex-col gap-2">
-                  {content.header.contacts?.map((contact) => (
-                    <Link key={contact.url} href={contact.url}>
-                      {contact.text}
-                    </Link>
-                  ))}
+                  <Link href={contentData.links.phone.url}>
+                    {contentData.links.phone.text}
+                  </Link>
+                  <Link href={contentData.links.email.url}>
+                    {contentData.links.email.text}
+                  </Link>
                 </div>
                 <SocialIcons />
               </div>
