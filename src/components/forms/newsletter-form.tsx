@@ -20,7 +20,7 @@ const NewsletterForm = () => {
   const [loading, setLoading] = useState(false);
 
   const newsletterSchema = z.object({
-    email: z.string().email("Please enter a valid email"),
+    email: z.string().email(contentData.footer.newsletter.error),
   });
 
   type NewsletterData = z.infer<typeof newsletterSchema>;
@@ -43,13 +43,13 @@ const NewsletterForm = () => {
       if (result?.message) {
         alert(result.message);
       } else {
-        alert("You have successfully subscribed to the newsletter!");
+        alert(contentData.footer.newsletter.success);
       }
     } catch (error) {
       if (error instanceof Error) {
         alert(error.message);
       } else {
-        alert("An error occurred while sending the form");
+        alert(contentData.footer.newsletter.error);
       }
     } finally {
       setLoading(false);
@@ -68,14 +68,19 @@ const NewsletterForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder={contentData.footer.newsletter.placeholder} {...field} />
+                <Input
+                  placeholder={contentData.footer.newsletter.placeholder}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
         <Button type="submit" className="w-full" disabled={loading}>
-          {loading ? contentData.footer.newsletter.loading : contentData.footer.newsletter.button}
+          {loading
+            ? contentData.footer.newsletter.loading
+            : contentData.footer.newsletter.button}
         </Button>
       </form>
     </Form>

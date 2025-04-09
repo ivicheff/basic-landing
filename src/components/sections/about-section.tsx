@@ -5,14 +5,14 @@ import StatisticCardBlock from "../block/statistic-card-block";
 const AboutSection = () => {
   return (
     <section
-      className="flex flex-col gap-5 md:flex-row md:items-end md:gap-10"
+      className="flex flex-col gap-5 lg:flex-row lg:items-end lg:gap-10"
       id="about"
     >
       <div className="flex h-full flex-1">
-        <div className="relative h-full min-h-[31.25rem] w-full">
+        <div className="relative h-64 md:min-h-[31.25rem] w-full xl:h-full">
           <Image
             src={contentData.about.image.src}
-            className="rounded-lg object-cover w-full h-full"
+            className="h-full w-full rounded-lg object-cover"
             alt={contentData.about.image.alt}
             fill
           />
