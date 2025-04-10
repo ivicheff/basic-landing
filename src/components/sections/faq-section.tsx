@@ -14,7 +14,7 @@ const FAQSection = () => {
   }
 
   return (
-    <section className="mx-auto flex max-w-[50rem] flex-col" id="faq">
+    <section className="mx-auto flex max-w-2xl items-center flex-col" id="faq">
       <div className="flex flex-col items-center gap-2 pb-8">
         <h2>{faqData.title}</h2>
         <p className="text-muted-foreground text-center">

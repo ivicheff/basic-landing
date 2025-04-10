@@ -12,7 +12,7 @@ const PricingSection = () => {
         </p>
       </div>
       <PriceCardBlock />
-      <div className="mt-16"/>
+      <div className="mt-10"/>
       <Calculator />
     </section>
   );

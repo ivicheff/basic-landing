@@ -125,7 +125,7 @@ const Calculator = () => {
   };
 
   return (
-    <Card className="mx-auto w-full max-w-[50rem]">
+    <Card className="mx-auto w-full max-w-2xl">
       <CardHeader className="flex flex-col gap-3">
         <CardTitle className="flex items-center gap-2">
           <CalculatorIcon className="h-7 w-7 text-blue-500" />

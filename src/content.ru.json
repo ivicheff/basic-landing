@@ -158,7 +158,91 @@
       { "title": "98%", "description": "Удовлетворенность" },
       { "title": "12+", "description": "Лет опыта" },
       { "title": "50+", "description": "Специалистов" }
-    ]
+    ],
+    "quiz": {
+      "title": "Пройдите тест и узнайте, какие услуги вам подходят",
+      "description": "Ответьте на несколько вопросов, чтобы мы могли порекомендовать оптимальное решение для вашего бизнеса",
+      "startButtonText": "Начать тест",
+      "nextButtonText": "Далее",
+      "prevButtonText": "Назад",
+      "resultButtonText": "Получить результат",
+      "resetButtonText": "Пройти еще раз",
+      "questions": [
+        {
+          "id": "business_size",
+          "text": "Какой размер вашего бизнеса?",
+          "options": [
+            { "id": "small", "text": "Малый бизнес (до 50 сотрудников)" },
+            { "id": "medium", "text": "Средний бизнес (50-250 сотрудников)" },
+            { "id": "large", "text": "Крупный бизнес (более 250 сотрудников)" }
+          ]
+        },
+        {
+          "id": "main_goal",
+          "text": "Какая основная цель на данный момент?",
+          "options": [
+            { "id": "growth", "text": "Развитие и масштабирование бизнеса" },
+            {
+              "id": "optimization",
+              "text": "Оптимизация процессов и сокращение расходов"
+            },
+            { "id": "digital", "text": "Цифровая трансформация" },
+            { "id": "marketing", "text": "Увеличение клиентской базы" }
+          ]
+        },
+        {
+          "id": "budget",
+          "text": "Какой у вас бюджет на развитие?",
+          "options": [
+            { "id": "small", "text": "До 500 тыс. руб." },
+            { "id": "medium", "text": "500 тыс. - 2 млн. руб." },
+            { "id": "large", "text": "Более 2 млн. руб." }
+          ]
+        },
+        {
+          "id": "timeline",
+          "text": "Какие у вас сроки на реализацию проекта?",
+          "options": [
+            { "id": "urgent", "text": "Срочно (до 1 месяца)" },
+            { "id": "normal", "text": "Средний приоритет (1-3 месяца)" },
+            {
+              "id": "longterm",
+              "text": "Долгосрочный проект (более 3 месяцев)"
+            }
+          ]
+        }
+      ],
+      "results": {
+        "default": {
+          "title": "Спасибо за ваши ответы!",
+          "description": "Наши специалисты подготовят для вас индивидуальное предложение. Оставьте контактные данные, и мы свяжемся с вами в ближайшее время.",
+          "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDVc5IxE9HhT2akm0S3v1y4lMgeGqBozDZrI7O",
+          "recommendedService": "Индивидуальное решение",
+          "contactButtonText": "Связаться с нами"
+        },
+        "consulting": {
+          "title": "Вам подойдет Бизнес-консалтинг",
+          "description": "Наши консультанты помогут оптимизировать бизнес-процессы и разработать стратегию развития компании.",
+          "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDqS2I2qNGp9xAwZSUPLY2sMXBc5o3hvRitFnd",
+          "recommendedService": "Бизнес-консалтинг",
+          "contactButtonText": "Узнать больше"
+        },
+        "marketing": {
+          "title": "Вам подойдет Цифровой маркетинг",
+          "description": "Наша маркетинговая команда поможет увеличить узнаваемость бренда и привлечь новых клиентов через цифровые каналы.",
+          "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDTEzeKNtvWdkOg1qNn3L4op5zuZKVH7s06QXb",
+          "recommendedService": "Цифровой маркетинг",
+          "contactButtonText": "Узнать больше"
+        },
+        "development": {
+          "title": "Вам подойдет Разработка ПО",
+          "description": "Наши разработчики создадут программные решения, которые автоматизируют процессы и повысят эффективность вашего бизнеса.",
+          "image": "https://vc7v703vlt.ufs.sh/f/JPvQ68qNOfoDvfoFaxdfV6EPN8BLqWb3xCR2rAp9IdgHeThG",
+          "recommendedService": "Разработка ПО",
+          "contactButtonText": "Узнать больше"
+        }
+      }
+    }
   },
   "pricing": {
     "title": "Тарифы",
