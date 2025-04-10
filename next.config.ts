@@ -1,7 +1,5 @@
-/**
- * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
- * for Docker builds.
- */
+import createMDX from "@next/mdx";
+
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
@@ -9,6 +7,15 @@ const config = {
   images: {
     domains: ["github.com", "vc7v703vlt.ufs.sh"],
   },
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };
 
-export default config;
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+    format: "mdx",
+  },
+});
+
+export default withMDX(config);
