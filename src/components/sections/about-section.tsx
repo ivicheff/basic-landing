@@ -28,7 +28,6 @@ const AboutSection = () => {
           <StatisticCardBlock />
         </div>
       </div>
-
       <Quiz />
     </section>
   );

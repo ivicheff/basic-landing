@@ -20,7 +20,7 @@ const NewsletterForm = () => {
   const [loading, setLoading] = useState(false);
 
   const newsletterSchema = z.object({
-    email: z.string().email(contentData.footer.newsletter.error),
+    email: z.string().email(contentData.footer.newsletter.email.error),
   });
 
   type NewsletterData = z.infer<typeof newsletterSchema>;
@@ -69,7 +69,7 @@ const NewsletterForm = () => {
             <FormItem>
               <FormControl>
                 <Input
-                  placeholder={contentData.footer.newsletter.placeholder}
+                  placeholder={contentData.footer.newsletter.email.placeholder}
                   {...field}
                 />
               </FormControl>
