@@ -17,7 +17,7 @@ const StatisticCard = ({ title, description }: StatisticCardProps) => {
         <CardTitle>
           <h2>{title}</h2>
         </CardTitle>
-        <CardDescription className="md:whitespace-nowrap">
+        <CardDescription className="2xl:whitespace-nowrap">
           <p>
             <small>{description}</small>
           </p>

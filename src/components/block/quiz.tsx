@@ -104,7 +104,7 @@ const Quiz = () => {
     return (
       <Card className="mx-auto flex w-full max-w-2xl flex-col items-center">
         <CardHeader className="flex w-full flex-col gap-3 text-center">
-          <CardTitle className="text-center">
+          <CardTitle className="text-center w-full">
             <h3>{quizData.title}</h3>
           </CardTitle>
           <CardDescription>
@@ -159,7 +159,7 @@ const Quiz = () => {
     currentQuestion && answers[currentQuestion.id] !== undefined;
 
   return (
-    <Card className="mx-auto flex  max-w-2xl flex-col">
+    <Card className="mx-auto flex max-w-2xl flex-col">
       <CardHeader>
         <CardTitle className="text-center break-words">
           <h3>{currentQuestion?.text}</h3>
