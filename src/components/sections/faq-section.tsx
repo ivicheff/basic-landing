@@ -3,11 +3,10 @@
 import Link from "next/link";
 import FAQAccordionBlock from "~/components/block/faq-accordion-block";
 import { Button } from "~/components/ui/button";
-import type { ContentData } from "~/lib/content";
 import { contentData } from "~/lib/content-data";
 
 const FAQSection = () => {
-  const faqData = (contentData as ContentData).faq;
+  const faqData = contentData.faq;
 
   if (!faqData) {
     return null;

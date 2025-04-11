@@ -5,6 +5,7 @@ import Logo from "~/components/ui/logo";
 import { Separator } from "~/components/ui/separator";
 import SocialIcons from "~/components/ui/social-icons";
 import { contentData } from "~/lib/content-data";
+
 const Footer = () => {
   return (
     <footer

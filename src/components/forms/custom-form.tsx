@@ -18,10 +18,8 @@ import { Input } from "~/components/ui/input";
 import { Textarea } from "~/components/ui/textarea";
 import { handleForm } from "~/lib/actions";
 import { contentData } from "~/lib/content-data";
-import type { ContentData } from "~/types/content";
 
-const content = contentData as unknown as ContentData;
-const formContent = content.contacts.form;
+const formContent = contentData.contacts.form;
 
 const CustomForm = () => {
   const [loading, setLoading] = useState(false);

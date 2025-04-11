@@ -7,15 +7,19 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "~/components/ui/accordion";
-import type { ContentData, FAQItem } from "~/lib/content";
 import { contentData } from "~/lib/content-data";
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
 
 interface FAQAccordionBlockProps {
   questions?: FAQItem[];
 }
 
 const FAQAccordionBlock = ({ questions }: FAQAccordionBlockProps) => {
-  const faqItems = questions ?? (contentData as ContentData).faq.questions;
+  const faqItems = questions ?? contentData.faq.questions;
   const [openItem, setOpenItem] = useState<string | undefined>(undefined);
 
   if (!faqItems?.length) {

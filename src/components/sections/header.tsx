@@ -16,10 +16,7 @@ import SocialIcons from "~/components/ui/social-icons";
 import { useScrollDirection } from "~/hooks/useScrollDirection";
 import { contentData } from "~/lib/content-data";
 import { cn } from "~/lib/utils";
-import type { ContentData } from "~/types/content";
 import CustomLink from "../ui/custom-link";
-
-const content = contentData as unknown as ContentData;
 
 const Header = () => {
   const isVisible = useScrollDirection();
@@ -43,8 +40,8 @@ const Header = () => {
             {contentData.links.email.text}
           </Link>
         </div>
-        <div className="hidden items-center gap-8 xl:flex 2xl:flex-1 ">
-          <nav className=" flex items-center gap-9 text-nowrap">
+        <div className="hidden items-center gap-8 xl:flex 2xl:flex-1">
+          <nav className="flex items-center gap-9 text-nowrap">
             {contentData.header.navigation?.map((item) => (
               <CustomLink key={item.url} href={item.url}>
                 {item.text}
@@ -67,11 +64,11 @@ const Header = () => {
             <SheetContent>
               <SheetHeader>
                 <SheetTitle className="text-3xl font-bold">
-                  {content.header.logo}
+                  {contentData.links.logo.text}
                 </SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col items-start space-y-5 p-4 text-xl">
-                {content.header.navigation?.map((item) => (
+                {contentData.header.navigation?.map((item) => (
                   <CustomLink key={item.url} href={item.url}>
                     {item.text}
                   </CustomLink>
@@ -89,7 +86,9 @@ const Header = () => {
                 <SocialIcons />
               </div>
               <SheetFooter>
-                <Button className="w-full">{content.header.cta.text}</Button>
+                <Button className="w-full">
+                  {contentData.header.cta.text}
+                </Button>
               </SheetFooter>
             </SheetContent>
           </Sheet>
