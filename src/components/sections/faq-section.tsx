@@ -15,11 +15,9 @@ const FAQSection = () => {
 
   return (
     <section className="mx-auto flex max-w-2xl flex-col items-center" id="faq">
-      <div className="flex flex-col items-center gap-2 pb-8">
+      <div className="flex flex-col items-center gap-2 pb-8 text-center">
         <h2>{faqData.title}</h2>
-        <p className="text-muted-foreground text-center">
-          {faqData.description}
-        </p>
+        <p className="text-muted-foreground">{faqData.description}</p>
       </div>
       <FAQAccordionBlock />
       <div className="flex flex-col items-center gap-5 pt-10">
