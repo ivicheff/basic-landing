@@ -1,14 +1,14 @@
 import Link from "next/link";
 import NewsletterForm from "~/components/forms/newsletter-form";
 import CustomLink from "~/components/ui/custom-link";
-import SocialIcons from "~/components/ui/social-icons";
-import contentData from "../../../src/content.ru.json";
-import { Separator } from "~/components/ui/separator";
 import Logo from "~/components/ui/logo";
+import { Separator } from "~/components/ui/separator";
+import SocialIcons from "~/components/ui/social-icons";
+import { contentData } from "~/lib/content-data";
 const Footer = () => {
   return (
     <footer
-      className="mx-auto flex max-w-[102rem] flex-col px-4  md:px-8"
+      className="mx-auto flex max-w-[102rem] flex-col px-4 md:px-8"
       id="footer"
     >
       <div className="flex flex-col justify-between gap-8 md:flex-row md:flex-wrap">
@@ -16,7 +16,10 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <h4 className="w-fit">{contentData.footer.contactInfo.title}</h4>
             <div className="flex flex-col gap-3">
-              <Link href={contentData.links.phone.url} className="text-muted-foreground">
+              <Link
+                href={contentData.links.phone.url}
+                className="text-muted-foreground"
+              >
                 {contentData.links.phone.text}
               </Link>
               <Link
@@ -92,7 +95,7 @@ const Footer = () => {
         </div>
       </div>
       <Separator className="my-8" />
-      <div className="border-border flex flex-col-reverse justify-between  pb-5 xl:flex-row md:pb-7">
+      <div className="border-border flex flex-col-reverse justify-between pb-5 md:pb-7 xl:flex-row">
         <p className="text-muted-foreground pt-8 xl:pt-0">
           {contentData.footer.copyright}
         </p>

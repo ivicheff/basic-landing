@@ -1,4 +1,4 @@
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 interface AvatarStackProps {

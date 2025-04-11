@@ -18,7 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "~/components/ui/select";
-import contentData from "~/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 interface CalculationState {
   service: string;
@@ -134,12 +134,11 @@ const Calculator = () => {
         <CardDescription>{calculator.description}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <div className="space-y-2 w-full">
+        <div className="w-full space-y-2">
           <Label htmlFor="service">{calculator.fields.service.label}</Label>
           <Select
             value={formData.service}
             onValueChange={(value) => handleChange("service", value)}
-            
           >
             <SelectTrigger id="service" className="w-full">
               <SelectValue
@@ -156,7 +155,7 @@ const Calculator = () => {
           </Select>
         </div>
 
-        <div className="space-y-2 w-full">
+        <div className="w-full space-y-2">
           <Label htmlFor="duration">{calculator.fields.duration.label}</Label>
           <Select
             value={formData.duration}
@@ -177,7 +176,7 @@ const Calculator = () => {
           </Select>
         </div>
 
-        <div className="space-y-2 w-full">
+        <div className="w-full space-y-2">
           <Label htmlFor="complexity">
             {calculator.fields.complexity.label}
           </Label>
@@ -200,7 +199,7 @@ const Calculator = () => {
           </Select>
         </div>
 
-        <div className="space-y-2 w-full">
+        <div className="w-full space-y-2">
           <Label htmlFor="urgency">{calculator.fields.urgency.label}</Label>
           <Select
             value={formData.urgency}

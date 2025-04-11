@@ -1,5 +1,5 @@
 import AdvantagesCardBlock from "~/components/block/advantages-card-block";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 const AdvantagesSection = () => {
   return (
     <section className="flex flex-col" id="advantages">

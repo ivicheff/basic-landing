@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "~/components/ui/card";
-import contentData from "~/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 interface Option {
   id: string;
@@ -104,7 +104,7 @@ const Quiz = () => {
     return (
       <Card className="mx-auto flex w-full max-w-2xl flex-col items-center">
         <CardHeader className="flex w-full flex-col gap-3 text-center">
-          <CardTitle className="text-center w-full">
+          <CardTitle className="w-full text-center">
             <h3>{quizData.title}</h3>
           </CardTitle>
           <CardDescription>

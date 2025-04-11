@@ -8,7 +8,7 @@ import {
   AccordionTrigger,
 } from "~/components/ui/accordion";
 import type { ContentData, FAQItem } from "~/lib/content";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 interface FAQAccordionBlockProps {
   questions?: FAQItem[];

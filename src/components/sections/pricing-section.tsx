@@ -1,6 +1,6 @@
 import Calculator from "~/components/block/calculator";
 import PriceCardBlock from "~/components/block/price-card-block";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 const PricingSection = () => {
   return (
@@ -12,7 +12,7 @@ const PricingSection = () => {
         </p>
       </div>
       <PriceCardBlock />
-      <div className="mt-10"/>
+      <div className="mt-10" />
       <Calculator />
     </section>
   );

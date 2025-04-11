@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "~/components/ui/button";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 import AvatarStack from "../patterns/avatar-stack";
 import PlatformCardStack from "../patterns/platform-card-stack";
 
@@ -40,7 +40,7 @@ const HeroSection = () => {
         <Image
           src={contentData.hero.image.src}
           alt={contentData.hero.image.alt}
-          className="rounded-lg object-cover w-full h-full shadow-xl"
+          className="h-full w-full rounded-lg object-cover shadow-xl"
           width={1632}
           height={1088}
         />

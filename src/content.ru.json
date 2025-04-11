@@ -538,7 +538,7 @@
       "formcarryError": "Ошибка сервера при подписке на рассылку",
       "missingApiKey": "API ключ для подписки не настроен"
     },
-    "copyright": "© 2024 Все права защищены",
+    "copyright": "© 2025 Все права защищены",
     "legalLinks": [
       { "text": "Условия использования", "url": "/terms-of-service" },
       { "text": "Политика конфиденциальности", "url": "/privacy-policy" },

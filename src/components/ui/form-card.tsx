@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "~/components/ui/card";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 const FormCard = () => {
   return (

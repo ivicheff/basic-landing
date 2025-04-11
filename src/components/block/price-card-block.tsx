@@ -1,5 +1,5 @@
 import PriceCard from "~/components/ui/price-card";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 const PriceCardBlock = () => {
   return (
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">

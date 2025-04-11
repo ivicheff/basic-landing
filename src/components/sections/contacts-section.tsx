@@ -5,7 +5,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useRef } from "react";
 import FormCard from "~/components/ui/form-card";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 const yandexMapApiKey = process.env.NEXT_PUBLIC_YANDEX_MAPS_API_KEY;
 // Определение типов для Яндекс.Карт

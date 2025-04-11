@@ -13,8 +13,8 @@ import {
   SheetTrigger,
 } from "~/components/ui/sheet";
 import SocialIcons from "~/components/ui/social-icons";
-import contentData from "~/content.ru.json";
 import { useScrollDirection } from "~/hooks/useScrollDirection";
+import { contentData } from "~/lib/content-data";
 import { cn } from "~/lib/utils";
 import type { ContentData } from "~/types/content";
 import CustomLink from "../ui/custom-link";
@@ -43,8 +43,8 @@ const Header = () => {
             {contentData.links.email.text}
           </Link>
         </div>
-        <div className="hidden items-center gap-8 xl:flex 2xl:flex-1">
-          <nav className="flex items-center gap-9 text-nowrap">
+        <div className="hidden items-center gap-8 xl:flex 2xl:flex-1 ">
+          <nav className=" flex items-center gap-9 text-nowrap">
             {contentData.header.navigation?.map((item) => (
               <CustomLink key={item.url} href={item.url}>
                 {item.text}

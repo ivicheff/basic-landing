@@ -1,5 +1,5 @@
 import PlatformReviewsCard from "~/components/ui/platform-reviews-card";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 interface Platform {
   rating: number;

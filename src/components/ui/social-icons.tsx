@@ -5,8 +5,8 @@ import {
   FaXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
+import { contentData } from "~/lib/content-data";
 import CustomLink from "./custom-link";
-import contentData from "~/content.ru.json";
 
 const SocialIcons = () => {
   return (

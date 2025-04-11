@@ -1,6 +1,6 @@
 import { BarChart, HeadphonesIcon, Shield, Zap } from "lucide-react";
 import AdvantagesCard from "~/components/ui/advantages-card";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 const iconComponents = {
   Zap: Zap,

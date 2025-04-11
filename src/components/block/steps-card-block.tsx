@@ -1,6 +1,6 @@
 import { type ReactElement } from "react";
 import Step from "~/components/patterns/step";
-import contentData from "~/content.ru.json";
+import { contentData } from "~/lib/content-data";
 import type { ContentData } from "~/types/content";
 
 const content = contentData as unknown as ContentData;

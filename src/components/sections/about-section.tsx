@@ -1,5 +1,5 @@
 import Image from "next/image";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 import Quiz from "../block/quiz";
 import StatisticCardBlock from "../block/statistic-card-block";
 

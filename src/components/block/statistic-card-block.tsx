@@ -1,5 +1,5 @@
 import StatisticCard from "~/components/ui/statistic-card";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 const StatisticCardBlock = () => {
   return (

@@ -14,7 +14,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { handleNewsletterForm } from "~/lib/actions";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 const NewsletterForm = () => {
   const [loading, setLoading] = useState(false);

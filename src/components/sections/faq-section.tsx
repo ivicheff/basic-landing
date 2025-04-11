@@ -1,10 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import FAQAccordionBlock from "~/components/block/faq-accordion-block";
 import { Button } from "~/components/ui/button";
 import type { ContentData } from "~/lib/content";
-import contentData from "../../../src/content.ru.json";
-import Link from "next/link";
+import { contentData } from "~/lib/content-data";
 
 const FAQSection = () => {
   const faqData = (contentData as ContentData).faq;
@@ -14,7 +14,7 @@ const FAQSection = () => {
   }
 
   return (
-    <section className="mx-auto flex max-w-2xl items-center flex-col" id="faq">
+    <section className="mx-auto flex max-w-2xl flex-col items-center" id="faq">
       <div className="flex flex-col items-center gap-2 pb-8">
         <h2>{faqData.title}</h2>
         <p className="text-muted-foreground text-center">

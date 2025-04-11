@@ -1,5 +1,5 @@
 import StepsCardBlock from "~/components/block/steps-card-block";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 const StepsSection = () => {
   return (

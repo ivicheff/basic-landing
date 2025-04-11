@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "~/components/ui/carousel";
 import TestimonialCard from "~/components/ui/testimonial-card";
-import contentData from "../../../src/content.ru.json";
+import { contentData } from "~/lib/content-data";
 
 interface Testimonial {
   name: string;

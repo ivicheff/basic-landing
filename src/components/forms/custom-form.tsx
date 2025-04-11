@@ -16,8 +16,8 @@ import { Button } from "~/components/ui/button";
 import { Card, CardContent } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
 import { Textarea } from "~/components/ui/textarea";
-import contentData from "~/content.ru.json";
 import { handleForm } from "~/lib/actions";
+import { contentData } from "~/lib/content-data";
 import type { ContentData } from "~/types/content";
 
 const content = contentData as unknown as ContentData;
@@ -70,7 +70,7 @@ const CustomForm = () => {
   };
 
   return (
-    <Card className=" px-0 py-0 border-none shadow-none">
+    <Card className="border-none px-0 py-0 shadow-none">
       <CardContent className="h-full">
         <Form {...formInstance}>
           <form
